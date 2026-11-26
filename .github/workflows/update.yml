@@ -1,0 +1,61 @@
+name: Auto update site
+
+on:
+  schedule:
+    # GitHub cron 為 UTC。台灣時間 = UTC+8
+    - cron: "30 22 * * *"      # 每天 06:30 台灣：排行榜 + 新文章
+    - cron: "40 6 * * 1-5"     # 平日 14:40 台灣：收盤後更新 ETF 折溢價 / 選股
+    - cron: "0 10 * * 1-5"     # 平日 18:00 台灣：證交所盤後資料完整後再更新一次
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Build
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          # 只有早上那次排程（與手動執行）寫新文章，盤後那兩次只更新數據
+          if [ "${{ github.event.schedule }}" = "30 22 * * *" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python scripts/build.py
+          else
+            python scripts/build.py --articles 0
+          fi
+      - name: Commit data snapshot
+        run: |
+          git config user.name "site-bot"
+          git config user.email "site-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "auto: update data $(date -u +%F_%H%M)"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

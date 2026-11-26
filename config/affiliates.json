@@ -1,0 +1,17 @@
+{
+ "_說明": "url 換成你在各聯盟平台（通路王、聯盟網、博客來 AP、momo、Amazon Associates、券商推薦開戶）取得的追蹤連結。tags 用來自動配對頁面主題；pages 指定會在哪些頁面的推薦欄出現。",
+ "products": [
+  {"id": "broker-account", "name": "線上券商開戶（手續費優惠）", "desc": "定期定額 ETF 低至 1 元起，開戶享手續費折扣。", "url": "https://example.com/your-broker-referral", "tags": ["finance", "etf", "stock"], "pages": ["stocks", "etf", "fx", "home"], "cta": "免費開戶"},
+  {"id": "us-broker", "name": "海外券商（投資美股 ETF）", "desc": "零佣金交易美股與美國 ETF。", "url": "https://example.com/your-us-broker-referral", "tags": ["finance", "etf", "fx"], "pages": ["etf", "fx"], "cta": "了解更多"},
+  {"id": "cashback-card", "name": "高回饋信用卡", "desc": "國內外消費現金回饋，綁定行動支付再加碼。", "url": "https://example.com/your-card-referral", "tags": ["finance", "life"], "pages": ["home", "fx", "blog"], "cta": "立即申辦"},
+  {"id": "book-investing", "name": "理財入門經典書單", "desc": "ETF、資產配置、被動投資必讀。", "url": "https://example.com/your-books-ap-link", "tags": ["finance", "book"], "pages": ["stocks", "etf", "books", "blog"], "cta": "看書單"},
+  {"id": "music-stream", "name": "音樂串流訂閱", "desc": "排行榜歌曲一次聽到飽。", "url": "https://example.com/your-music-affiliate", "tags": ["music", "culture"], "pages": ["music"], "cta": "免費試用"},
+  {"id": "video-stream", "name": "影音串流平台", "desc": "熱門電影與影集線上看。", "url": "https://example.com/your-video-affiliate", "tags": ["movie", "culture"], "pages": ["movies"], "cta": "免費試用"},
+  {"id": "ebook-reader", "name": "電子書閱讀器", "desc": "護眼電子紙，帶著上千本書通勤。", "url": "https://example.com/your-ereader-link", "tags": ["book", "culture"], "pages": ["books", "apps"], "cta": "查看價格"},
+  {"id": "probiotics", "name": "益生菌保健食品", "desc": "多菌種配方，日常保養。", "url": "https://example.com/your-health-link-1", "tags": ["health", "gut"], "pages": ["health"], "cta": "看評價"},
+  {"id": "sleep-pillow", "name": "人體工學記憶枕", "desc": "改善睡姿，提升睡眠品質。", "url": "https://example.com/your-health-link-2", "tags": ["health", "sleep"], "pages": ["health"], "cta": "看評價"},
+  {"id": "smart-watch", "name": "健康智慧手錶", "desc": "心率、睡眠、運動紀錄一手掌握。", "url": "https://example.com/your-watch-link", "tags": ["health", "fitness", "sleep"], "pages": ["health", "apps"], "cta": "查看價格"},
+  {"id": "yoga-mat", "name": "居家健身組（瑜珈墊＋彈力帶）", "desc": "在家就能做肌力與伸展。", "url": "https://example.com/your-fitness-link", "tags": ["health", "fitness"], "pages": ["health"], "cta": "查看價格"},
+  {"id": "noise-headphone", "name": "降噪耳機", "desc": "通勤聽 Podcast、音樂的好夥伴。", "url": "https://example.com/your-headphone-link", "tags": ["music", "podcast", "culture"], "pages": ["music", "apps", "news"], "cta": "查看價格"}
+ ]
+}

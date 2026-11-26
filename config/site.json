@@ -1,0 +1,42 @@
+{
+ "name": "每日榜單研究所",
+ "tagline": "理財數據 × 生活排行 × 健康小百科，每天 AI 自動更新",
+ "base_url": "https://www.yours-news.com",
+ "custom_domain": "www.yours-news.com",
+ "lang": "zh-Hant-TW",
+ "adsense_client": "",
+ "ga4_id": "",
+ "articles_per_run": 2,
+ "_shortcuts說明": "首頁捷徑入口。外部網站的 url 請換成你的聯盟追蹤連結（sponsored: true 會標示為贊助連結）；domain 用來自動抓網站圖示，沒有 domain 就顯示 icon 表情符號。",
+ "shortcuts": [
+  {"name": "潛力股", "url": "stocks.html", "icon": "📈"},
+  {"name": "ETF 折溢價", "url": "etf.html", "icon": "⚖️"},
+  {"name": "匯率", "url": "fx.html", "icon": "💱"},
+  {"name": "音樂榜", "url": "music.html", "icon": "🎵"},
+  {"name": "暢銷書", "url": "books.html", "icon": "📚"},
+  {"name": "電影榜", "url": "movies.html", "icon": "🎬"},
+  {"name": "熱門新聞", "url": "news.html", "icon": "📰"},
+  {"name": "健康", "url": "health.html", "icon": "🩺"},
+  {"name": "蝦皮購物", "url": "https://shopee.tw/", "domain": "shopee.tw", "sponsored": true},
+  {"name": "momo", "url": "https://www.momoshop.com.tw/", "domain": "momoshop.com.tw", "sponsored": true},
+  {"name": "博客來", "url": "https://www.books.com.tw/", "domain": "books.com.tw", "sponsored": true},
+  {"name": "PChome", "url": "https://24h.pchome.com.tw/", "domain": "pchome.com.tw", "sponsored": true},
+  {"name": "Booking.com", "url": "https://www.booking.com/", "domain": "booking.com", "sponsored": true},
+  {"name": "Agoda", "url": "https://www.agoda.com/zh-tw/", "domain": "agoda.com", "sponsored": true},
+  {"name": "Trip.com", "url": "https://tw.trip.com/", "domain": "trip.com", "sponsored": true},
+  {"name": "KKday", "url": "https://www.kkday.com/zh-tw", "domain": "kkday.com", "sponsored": true},
+  {"name": "Klook", "url": "https://www.klook.com/zh-TW/", "domain": "klook.com", "sponsored": true},
+  {"name": "iHerb", "url": "https://tw.iherb.com/", "domain": "iherb.com", "sponsored": true}
+ ],
+ "affiliate": {
+  "apple_token": "",
+  "amazon_tag": "",
+  "books_link_template": "https://search.books.com.tw/search/query/key/{q}",
+  "shop_link_template": "https://www.momoshop.com.tw/search/searchShop.jsp?keyword={q}"
+ },
+ "topics": [
+  {"cat": "finance", "label": "理財", "ideas": ["月薪族如何用 ETF 建立被動收入", "高股息 ETF 與市值型 ETF 怎麼選", "ETF 溢價時買進的風險", "緊急預備金要存多少", "信用卡回饋與記帳自動化", "美元定存與匯率風險", "年輕人第一份保險怎麼規劃", "退休金試算與4%法則"]},
+  {"cat": "health", "label": "健康小百科", "ideas": ["睡眠品質改善的科學方法", "久坐上班族的伸展與護腰", "外食族如何吃得均衡", "認識血糖與飯後嗜睡", "護眼：3C 族群的用眼習慣", "居家肌力訓練入門", "腸道健康與膳食纖維", "壓力管理與呼吸練習"]},
+  {"cat": "culture", "label": "生活文藝", "ideas": ["本月排行榜歌曲背後的流行趨勢", "暢銷書帶來的三個生活啟發", "週末在家看的高分電影清單", "通勤時間值得聽的 Podcast", "打造舒適的居家閱讀角落"]}
+ ]
+}

@@ -11,19 +11,19 @@
   },
   {
    "rank": 2,
-   "name": "Pride and Prejudice",
-   "artist": "Jane Austen",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/c2/d3/13/c2d3135e-89c9-d032-12e3-46be81d32f50/BKS-WW-ABC-Pride_and_Prejudice-Jane_Austen.png/100x156bb.png",
-   "url": "https://books.apple.com/tw/book/pride-and-prejudice/id395534643",
-   "genre": "小說與文學"
-  },
-  {
-   "rank": 3,
    "name": "孫子兵法",
    "artist": "孫武",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/dd/ae/17/ddae1757-3b2c-ddeb-5fac-ca38ea1b0e19/coverArt.d4ac41.jpg/100x148bb.png",
    "url": "https://books.apple.com/tw/book/%E5%AD%AB%E5%AD%90%E5%85%B5%E6%B3%95/id881082488",
    "genre": "亞洲史"
+  },
+  {
+   "rank": 3,
+   "name": "Pride and Prejudice",
+   "artist": "Jane Austen",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/c2/d3/13/c2d3135e-89c9-d032-12e3-46be81d32f50/BKS-WW-ABC-Pride_and_Prejudice-Jane_Austen.png/100x156bb.png",
+   "url": "https://books.apple.com/tw/book/pride-and-prejudice/id395534643",
+   "genre": "小說與文學"
   },
   {
    "rank": 4,
@@ -43,38 +43,6 @@
   },
   {
    "rank": 6,
-   "name": "西游记",
-   "artist": "吳承恩",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication6/v4/66/cf/26/66cf2672-83b0-fa17-eaa5-ebdfbb36f757/50171.jpg/100x154bb.png",
-   "url": "https://books.apple.com/tw/book/%E8%A5%BF%E6%B8%B8%E8%AE%B0/id895412916",
-   "genre": "童話、神話與寓言"
-  },
-  {
-   "rank": 7,
-   "name": "The Tale of Peter Rabbit",
-   "artist": "Beatrix Potter",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/cf/eb/91/cfeb91b0-8e39-6f13-482d-beee426d1a7c/cover.png/100x150bb.png",
-   "url": "https://books.apple.com/tw/book/the-tale-of-peter-rabbit/id395687517",
-   "genre": "小說與文學"
-  },
-  {
-   "rank": 8,
-   "name": "狂人日記",
-   "artist": "魯迅",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/c7/2d/fe/c72dfe73-f378-921b-23dd-372fdf65c0d2/coverArt.458c76.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%A8%98/id882739466",
-   "genre": "文學小說"
-  },
-  {
-   "rank": 9,
-   "name": "道德經",
-   "artist": "老子",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/e2/a1/98/e2a1986f-e6b3-80d6-d032-1565e6a57849/coverArt.aa427f.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/%E9%81%93%E5%BE%B7%E7%B6%93/id880958138",
-   "genre": "哲學"
-  },
-  {
-   "rank": 10,
    "name": "鬼谷子",
    "artist": "王诩",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication1/v4/2c/71/df/2c71df58-9d0c-7f28-d22c-1eeffb257a48/coverArt.1c95fb.jpg/100x148bb.png",
@@ -82,39 +50,31 @@
    "genre": "哲學"
   },
   {
-   "rank": 11,
-   "name": "金剛般若波羅蜜經",
-   "artist": "黃崑山",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/c1/8e/ba/c18eba65-145b-4316-9767-9f26b8ddf0a3/coverArt.73b48e.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/%E9%87%91%E5%89%9B%E8%88%AC%E8%8B%A5%E6%B3%A2%E7%BE%85%E8%9C%9C%E7%B6%93/id878640645",
-   "genre": "佛教"
+   "rank": 7,
+   "name": "道德經",
+   "artist": "老子",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/e2/a1/98/e2a1986f-e6b3-80d6-d032-1565e6a57849/coverArt.aa427f.jpg/100x148bb.png",
+   "url": "https://books.apple.com/tw/book/%E9%81%93%E5%BE%B7%E7%B6%93/id880958138",
+   "genre": "哲學"
   },
   {
-   "rank": 12,
-   "name": "Love, Life & Work",
-   "artist": "Elbert Hubbard",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/0f/07/11/0f0711d2-a1ab-4508-0af5-771ac56e7bca/coverArt.ba277a.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/love-life-work/id505912520",
-   "genre": "短篇故事"
+   "rank": 8,
+   "name": "西游记",
+   "artist": "吳承恩",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication6/v4/66/cf/26/66cf2672-83b0-fa17-eaa5-ebdfbb36f757/50171.jpg/100x154bb.png",
+   "url": "https://books.apple.com/tw/book/%E8%A5%BF%E6%B8%B8%E8%AE%B0/id895412916",
+   "genre": "童話、神話與寓言"
   },
   {
-   "rank": 13,
-   "name": "三国演义",
-   "artist": "羅貫中",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication42/v4/36/65/41/3665419e-2811-4ab4-61da-db05cbd642c4/mzm.xttpmapb.jpg/100x154bb.png",
-   "url": "https://books.apple.com/tw/book/%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/id893482961",
-   "genre": "歷史創作"
+   "rank": 9,
+   "name": "The Tale of Peter Rabbit",
+   "artist": "Beatrix Potter",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/cf/eb/91/cfeb91b0-8e39-6f13-482d-beee426d1a7c/cover.png/100x150bb.png",
+   "url": "https://books.apple.com/tw/book/the-tale-of-peter-rabbit/id395687517",
+   "genre": "小說與文學"
   },
   {
-   "rank": 14,
-   "name": "唐诗三百首",
-   "artist": "蘅塘退士",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/e4/f2/36/e4f23662-a9a1-41fd-e7cc-d3a71f9164b2/coverArt.25e98f.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/%E5%94%90%E8%AF%97%E4%B8%89%E7%99%BE%E9%A6%96/id891299235",
-   "genre": "詩歌"
-  },
-  {
-   "rank": 15,
+   "rank": 10,
    "name": "論語",
    "artist": "孔子",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/dc/b2/db/dcb2dbee-ad4b-0e16-5bcc-26e1d3ec7ca3/coverArt.0c0b73.jpg/100x148bb.png",
@@ -122,39 +82,7 @@
    "genre": "哲學"
   },
   {
-   "rank": 16,
-   "name": "The Adventures of Sherlock Holmes",
-   "artist": "Arthur Conan Doyle",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/0d/7e/3b/0d7e3b0b-2f13-2440-1adc-4d348cf4ca10/Adventures_of_Sherlock_Holmes_The_-_Arthur_Conan_Doyle.jpg/100x156bb.png",
-   "url": "https://books.apple.com/tw/book/the-adventures-of-sherlock-holmes/id395536306",
-   "genre": "偵探小說"
-  },
-  {
-   "rank": 17,
-   "name": "The Odyssey",
-   "artist": "Homer",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication1/v4/75/cc/01/75cc01bc-bac6-c792-cb8d-f68958ca3b84/coverArt.0712c0.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/the-odyssey/id498683875",
-   "genre": "歷史"
-  },
-  {
-   "rank": 18,
-   "name": "菜根譚",
-   "artist": "洪自誠",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/8d/fa/83/8dfa8307-18ed-a0dc-4c1d-6ae95ed32656/coverArt.f66eb9.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/%E8%8F%9C%E6%A0%B9%E8%AD%9A/id881462721",
-   "genre": "哲學"
-  },
-  {
-   "rank": 19,
-   "name": "Frankenstein",
-   "artist": "Mary Shelley",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/6e/64/6b/6e646b24-17de-f178-d4dd-0b3a34934d2a/PD_Frankensein-Adj.jpg/100x156bb.png",
-   "url": "https://books.apple.com/tw/book/frankenstein/id395546675",
-   "genre": "恐怖"
-  },
-  {
-   "rank": 20,
+   "rank": 11,
    "name": "世說新語",
    "artist": "劉義慶",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/70/2a/47/702a47c7-6946-489a-4821-9950d2d99c53/coverArt.459199.jpg/100x148bb.png",
@@ -162,23 +90,23 @@
    "genre": "小說與文學"
   },
   {
-   "rank": 21,
-   "name": "官場現形記",
-   "artist": "李伯元",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/79/ed/7a/79ed7acb-6974-1ed5-e05d-5fd3f9a2489a/coverArt.477880.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/%E5%AE%98%E5%A0%B4%E7%8F%BE%E5%BD%A2%E8%A8%98/id881076356",
+   "rank": 12,
+   "name": "三国演义",
+   "artist": "羅貫中",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication42/v4/36/65/41/3665419e-2811-4ab4-61da-db05cbd642c4/mzm.xttpmapb.jpg/100x154bb.png",
+   "url": "https://books.apple.com/tw/book/%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/id893482961",
    "genre": "歷史創作"
   },
   {
-   "rank": 22,
-   "name": "水滸傳",
-   "artist": "施耐庵",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication1/v4/b4/a7/a5/b4a7a5a0-d338-105d-c508-e8d90d8ab35f/coverArt.884904.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/%E6%B0%B4%E6%BB%B8%E5%82%B3/id881906817",
-   "genre": "文學小說"
+   "rank": 13,
+   "name": "唐诗三百首",
+   "artist": "蘅塘退士",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/e4/f2/36/e4f23662-a9a1-41fd-e7cc-d3a71f9164b2/coverArt.25e98f.jpg/100x148bb.png",
+   "url": "https://books.apple.com/tw/book/%E5%94%90%E8%AF%97%E4%B8%89%E7%99%BE%E9%A6%96/id891299235",
+   "genre": "詩歌"
   },
   {
-   "rank": 23,
+   "rank": 14,
    "name": "六祖壇經",
    "artist": "慧能",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/1a/5a/73/1a5a738a-3398-6a3e-53ab-097eca862400/coverArt.4cc34a.jpg/100x148bb.png",
@@ -186,7 +114,23 @@
    "genre": "佛教"
   },
   {
-   "rank": 24,
+   "rank": 15,
+   "name": "狂人日記",
+   "artist": "魯迅",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/c7/2d/fe/c72dfe73-f378-921b-23dd-372fdf65c0d2/coverArt.458c76.jpg/100x148bb.png",
+   "url": "https://books.apple.com/tw/book/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%A8%98/id882739466",
+   "genre": "文學小說"
+  },
+  {
+   "rank": 16,
+   "name": "The Odyssey",
+   "artist": "Homer",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication1/v4/75/cc/01/75cc01bc-bac6-c792-cb8d-f68958ca3b84/coverArt.0712c0.jpg/100x148bb.png",
+   "url": "https://books.apple.com/tw/book/the-odyssey/id498683875",
+   "genre": "歷史"
+  },
+  {
+   "rank": 17,
    "name": "A Tale of Two Cities",
    "artist": "查爾斯·狄更斯",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/ae/cc/4f/aecc4ffc-dc34-6267-a87f-bdde12966509/cover.png/100x150bb.png",
@@ -194,12 +138,60 @@
    "genre": "小說與文學"
   },
   {
-   "rank": 25,
-   "name": "莊子的故事",
-   "artist": "宋曄",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/fc/8b/3b/fc8b3b04-30a2-cdc7-ca8d-631a74af24ef/coverArt.16adf9.jpg/100x148bb.png",
-   "url": "https://books.apple.com/tw/book/%E8%8E%8A%E5%AD%90%E7%9A%84%E6%95%85%E4%BA%8B/id878635719",
+   "rank": 18,
+   "name": "红楼梦",
+   "artist": "曹雪芹",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication6/v4/c3/24/b5/c324b5c4-1e00-24b7-214c-1a587bb5ccab/50139.jpg/100x154bb.png",
+   "url": "https://books.apple.com/tw/book/%E7%BA%A2%E6%A5%BC%E6%A2%A6/id895043939",
+   "genre": "歷史創作"
+  },
+  {
+   "rank": 19,
+   "name": "菜根譚",
+   "artist": "洪自誠",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/8d/fa/83/8dfa8307-18ed-a0dc-4c1d-6ae95ed32656/coverArt.f66eb9.jpg/100x148bb.png",
+   "url": "https://books.apple.com/tw/book/%E8%8F%9C%E6%A0%B9%E8%AD%9A/id881462721",
    "genre": "哲學"
+  },
+  {
+   "rank": 20,
+   "name": "Frankenstein",
+   "artist": "Mary Shelley",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/6e/64/6b/6e646b24-17de-f178-d4dd-0b3a34934d2a/PD_Frankensein-Adj.jpg/100x156bb.png",
+   "url": "https://books.apple.com/tw/book/frankenstein/id395546675",
+   "genre": "恐怖"
+  },
+  {
+   "rank": 21,
+   "name": "金剛般若波羅蜜經",
+   "artist": "黃崑山",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/c1/8e/ba/c18eba65-145b-4316-9767-9f26b8ddf0a3/coverArt.73b48e.jpg/100x148bb.png",
+   "url": "https://books.apple.com/tw/book/%E9%87%91%E5%89%9B%E8%88%AC%E8%8B%A5%E6%B3%A2%E7%BE%85%E8%9C%9C%E7%B6%93/id878640645",
+   "genre": "佛教"
+  },
+  {
+   "rank": 22,
+   "name": "官場現形記",
+   "artist": "李伯元",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/79/ed/7a/79ed7acb-6974-1ed5-e05d-5fd3f9a2489a/coverArt.477880.jpg/100x148bb.png",
+   "url": "https://books.apple.com/tw/book/%E5%AE%98%E5%A0%B4%E7%8F%BE%E5%BD%A2%E8%A8%98/id881076356",
+   "genre": "歷史創作"
+  },
+  {
+   "rank": 23,
+   "name": "iPad 使用手冊(iOS 8.1 適用)",
+   "artist": "Apple Inc.",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication1/v4/2e/43/aa/2e43aa3d-9df7-a067-cc73-8aa54cd0c39e/ePubCoveriPad.png/100x145bb.png",
+   "url": "https://books.apple.com/tw/book/ipad-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8A-ios-8-1-%E9%81%A9%E7%94%A8/id931104844",
+   "genre": "電腦"
+  },
+  {
+   "rank": 24,
+   "name": "Love, Life & Work",
+   "artist": "Elbert Hubbard",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/0f/07/11/0f0711d2-a1ab-4508-0af5-771ac56e7bca/coverArt.ba277a.jpg/100x148bb.png",
+   "url": "https://books.apple.com/tw/book/love-life-work/id505912520",
+   "genre": "短篇故事"
   }
  ]
 }

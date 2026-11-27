@@ -42,27 +42,27 @@
   },
   {
    "rank": 6,
-   "name": "Dynamite",
-   "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/22/f3/8f/22f38fb9-1690-326a-d891-7aa946c2b06f/195497623273_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/dynamite/1596532185?i=1596532400",
-   "genre": "韓國流行樂"
-  },
-  {
-   "rank": 7,
-   "name": "FAKE LOVE",
-   "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/02/c5/18/02c518f5-ac06-3321-622e-08d9429fd968/192562556672_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/fake-love/1598660934?i=1598660938",
-   "genre": "韓國流行樂"
-  },
-  {
-   "rank": 8,
    "name": "擱淺",
    "artist": "周杰倫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/29/c1/2d/29c12de6-54b4-f549-9d9f-07d8a04221ea/JAY.jpg/100x111bb.jpg",
    "url": "https://music.apple.com/tw/album/%E6%93%B1%E6%B7%BA/536114662?i=536115199",
    "genre": "華語流行樂"
+  },
+  {
+   "rank": 7,
+   "name": "You’re Under Arrest",
+   "artist": "ILLIT",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/40/bf/b940bf84-9f10-15e6-423f-3cdca2bbdd21/823375411949_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/youre-under-arrest/6818511623?i=6818511627",
+   "genre": "韓國流行樂"
+  },
+  {
+   "rank": 8,
+   "name": "Dynamite",
+   "artist": "防彈少年團",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/22/f3/8f/22f38fb9-1690-326a-d891-7aa946c2b06f/195497623273_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/dynamite/1596532185?i=1596532400",
+   "genre": "韓國流行樂"
   },
   {
    "rank": 9,
@@ -74,11 +74,11 @@
   },
   {
    "rank": 10,
-   "name": "You’re Under Arrest",
-   "artist": "ILLIT",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/40/bf/b940bf84-9f10-15e6-423f-3cdca2bbdd21/823375411949_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/youre-under-arrest/6818511623?i=6818511627",
-   "genre": "韓國流行樂"
+   "name": "不該 (with 張惠妹)",
+   "artist": "周杰倫",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/58/28/f4/5828f491-62ab-61b6-25b4-23838e4f1dcf/dj.sxbqzong.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/%E4%B8%8D%E8%A9%B2-with-%E5%BC%B5%E6%83%A0%E5%A6%B9/1118757859?i=1118757873",
+   "genre": "華語流行樂"
   },
   {
    "rank": 11,
@@ -90,22 +90,6 @@
   },
   {
    "rank": 12,
-   "name": "不該 (with 張惠妹)",
-   "artist": "周杰倫",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/58/28/f4/5828f491-62ab-61b6-25b4-23838e4f1dcf/dj.sxbqzong.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/%E4%B8%8D%E8%A9%B2-with-%E5%BC%B5%E6%83%A0%E5%A6%B9/1118757859?i=1118757873",
-   "genre": "華語流行樂"
-  },
-  {
-   "rank": 13,
-   "name": "GiiiRIP",
-   "artist": "BIGBANG",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/29/40/132940f6-6b2d-7625-46be-2f22590c0bb3/8809519881573_cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/giiirip/6834436962?i=6834436963",
-   "genre": "韓國流行樂"
-  },
-  {
-   "rank": 14,
    "name": "七里香",
    "artist": "周杰倫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/29/c1/2d/29c12de6-54b4-f549-9d9f-07d8a04221ea/JAY.jpg/100x111bb.jpg",
@@ -113,23 +97,15 @@
    "genre": "華語流行樂"
   },
   {
-   "rank": 15,
-   "name": "Body to Body",
+   "rank": 13,
+   "name": "FAKE LOVE",
    "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/body-to-body/1868862375?i=1868862376",
-   "genre": "流行樂"
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/02/c5/18/02c518f5-ac06-3321-622e-08d9429fd968/192562556672_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/fake-love/1598660934?i=1598660938",
+   "genre": "韓國流行樂"
   },
   {
-   "rank": 16,
-   "name": "2.0",
-   "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/2-0/1868862375?i=1868862380",
-   "genre": "流行樂"
-  },
-  {
-   "rank": 17,
+   "rank": 14,
    "name": "晴天",
    "artist": "周杰倫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/45/8a/e4/458ae484-dc8b-5683-ce04-8d2948346462/JAY.jpg/100x109bb.jpg",
@@ -137,23 +113,15 @@
    "genre": "華語流行樂"
   },
   {
-   "rank": 18,
-   "name": "IDOL",
-   "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ff/00/2c/ff002c29-6da9-1a26-16b3-282a73180366/192562871591_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/idol/1598730614?i=1598730980",
+   "rank": 15,
+   "name": "GiiiRIP",
+   "artist": "BIGBANG",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/29/40/132940f6-6b2d-7625-46be-2f22590c0bb3/8809519881573_cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/giiirip/6834436962?i=6834436963",
    "genre": "韓國流行樂"
   },
   {
-   "rank": 19,
-   "name": "Butter",
-   "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/28/6c/66286c9f-6bea-4f99-ec15-507b0c95dc04/196006991739_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/butter/1598666015?i=1598666350",
-   "genre": "韓國流行樂"
-  },
-  {
-   "rank": 20,
+   "rank": 16,
    "name": "我不難過",
    "artist": "孫燕姿",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/24/fc/1d/24fc1d3e-b37f-968f-3d21-880edc8f8d79/mzi.ybwydvjn.jpg/200x200bb.jpg",
@@ -161,7 +129,15 @@
    "genre": "華語流行樂"
   },
   {
-   "rank": 21,
+   "rank": 17,
+   "name": "Butter",
+   "artist": "防彈少年團",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/28/6c/66286c9f-6bea-4f99-ec15-507b0c95dc04/196006991739_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/butter/1598666015?i=1598666350",
+   "genre": "韓國流行樂"
+  },
+  {
+   "rank": 18,
    "name": "Hong Kong (feat. 王菲季候風)",
    "artist": "The Weeknd",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/b2/81/0bb281a4-14af-a403-4af4-c39aa3f0d872/ticket.kusbehtm.jpg/200x200bb.jpg",
@@ -169,7 +145,23 @@
    "genre": "R&B/靈魂樂"
   },
   {
-   "rank": 22,
+   "rank": 19,
+   "name": "IDOL",
+   "artist": "防彈少年團",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ff/00/2c/ff002c29-6da9-1a26-16b3-282a73180366/192562871591_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/idol/1598730614?i=1598730980",
+   "genre": "韓國流行樂"
+  },
+  {
+   "rank": 20,
+   "name": "Body to Body",
+   "artist": "防彈少年團",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/body-to-body/1868862375?i=1868862376",
+   "genre": "流行樂"
+  },
+  {
+   "rank": 21,
    "name": "BAD",
    "artist": "ATEEZ",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/15/5e/a0/155ea070-3f0d-84ae-7883-128ecd9ed5bf/196874257944.jpg/200x200bb.jpg",
@@ -177,15 +169,15 @@
    "genre": "韓國流行樂"
   },
   {
-   "rank": 23,
-   "name": "Boy With Luv (feat. Halsey)",
+   "rank": 22,
+   "name": "2.0",
    "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/40/d4/93/40d493e3-ac9e-1746-8d4c-f380f27c97cb/193483706238_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/boy-with-luv-feat-halsey/1599171924?i=1599172208",
-   "genre": "韓國流行樂"
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/2-0/1868862375?i=1868862380",
+   "genre": "流行樂"
   },
   {
-   "rank": 24,
+   "rank": 23,
    "name": "聽見下雨的聲音",
    "artist": "周杰倫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/16/db/ff/16dbff09-0750-29b0-07b7-3fa44f8a556e/dj.nzqvfsza.jpg/200x200bb.jpg",
@@ -193,12 +185,20 @@
    "genre": "華語流行樂"
   },
   {
-   "rank": 25,
+   "rank": 24,
    "name": "稻香",
    "artist": "周杰倫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/1b/63/9e/1b639e5b-f8ca-a6e1-8612-6396bc9ff0eb/4711448407424.jpg/100x134bb.jpg",
    "url": "https://music.apple.com/tw/album/%E7%A8%BB%E9%A6%99/1624000713?i=1624001324",
    "genre": "華語流行樂"
+  },
+  {
+   "rank": 25,
+   "name": "Boy With Luv (feat. Halsey)",
+   "artist": "防彈少年團",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/40/d4/93/40d493e3-ac9e-1746-8d4c-f380f27c97cb/193483706238_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/boy-with-luv-feat-halsey/1599171924?i=1599172208",
+   "genre": "韓國流行樂"
   }
  ],
  "en": [
@@ -220,6 +220,14 @@
   },
   {
    "rank": 3,
+   "name": "Underneath the Tree",
+   "artist": "Kelly Clarkson",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/ee/40/2d/ee402d50-4a55-bcbe-b71c-6690784d4d37/886444201209.jpg/100x99bb.jpg",
+   "url": "https://music.apple.com/us/album/underneath-the-tree/720861443?i=720861445",
+   "genre": "Holiday"
+  },
+  {
+   "rank": 4,
    "name": "Last Thing You Need",
    "artist": "Morgan Wallen",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/200x200bb.jpg",
@@ -227,20 +235,12 @@
    "genre": "Country"
   },
   {
-   "rank": 4,
-   "name": "Flower In A Hurricane [From GTAVI: Original Score]",
-   "artist": "Justice, Tame Impala, SZA & King Gizzard & The Lizard Wizard",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/23/54/af235448-23b3-a3bf-0738-87f6c44a4bbc/5056556187486_cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/flower-in-a-hurricane-from-gtavi-original-score/6819802963?i=6819802968",
-   "genre": "Alternative"
-  },
-  {
    "rank": 5,
-   "name": "Been By Now",
-   "artist": "Morgan Wallen",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/8d/52/9f8d52a0-b6d9-d038-327b-4fe58bedce67/26UMGIM94572.rgb.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/been-by-now/6792676858?i=6792676860",
-   "genre": "Country"
+   "name": "Jingle Bell Rock",
+   "artist": "Bobby Helms",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e8/18/6b/e8186bf9-5696-e721-b273-a5f173caf8c1/18UMGIM07062.rgb.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/jingle-bell-rock/1358462130?i=1358462132",
+   "genre": "Holiday"
   },
   {
    "rank": 6,
@@ -252,19 +252,19 @@
   },
   {
    "rank": 7,
-   "name": "Underneath the Tree",
-   "artist": "Kelly Clarkson",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/ee/40/2d/ee402d50-4a55-bcbe-b71c-6690784d4d37/886444201209.jpg/100x99bb.jpg",
-   "url": "https://music.apple.com/us/album/underneath-the-tree/720861443?i=720861445",
-   "genre": "Holiday"
+   "name": "Flower In A Hurricane [From GTAVI: Original Score]",
+   "artist": "Justice, Tame Impala, SZA & King Gizzard & The Lizard Wizard",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/23/54/af235448-23b3-a3bf-0738-87f6c44a4bbc/5056556187486_cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/flower-in-a-hurricane-from-gtavi-original-score/6819802963?i=6819802968",
+   "genre": "Alternative"
   },
   {
    "rank": 8,
-   "name": "Jingle Bell Rock",
-   "artist": "Bobby Helms",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e8/18/6b/e8186bf9-5696-e721-b273-a5f173caf8c1/18UMGIM07062.rgb.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/jingle-bell-rock/1358462130?i=1358462132",
-   "genre": "Holiday"
+   "name": "Been By Now",
+   "artist": "Morgan Wallen",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/8d/52/9f8d52a0-b6d9-d038-327b-4fe58bedce67/26UMGIM94572.rgb.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/been-by-now/6792676858?i=6792676860",
+   "genre": "Country"
   },
   {
    "rank": 9,
@@ -276,6 +276,14 @@
   },
   {
    "rank": 10,
+   "name": "Sleigh Ride",
+   "artist": "The Ronettes",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2e/92/5f/2e925fa4-6a4e-a15e-7cfc-bb3f13f053e1/mzi.ermvbetx.jpg/100x99bb.jpg",
+   "url": "https://music.apple.com/us/album/sleigh-ride/336036941?i=336037282",
+   "genre": "Music"
+  },
+  {
+   "rank": 11,
    "name": "Housewife",
    "artist": "Tate McRae",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/64/e4/6964e483-c02c-e389-14f4-c426e8c65f2c/196874840146.jpg/200x200bb.jpg",
@@ -283,7 +291,7 @@
    "genre": "Pop"
   },
   {
-   "rank": 11,
+   "rank": 12,
    "name": "In A Minute",
    "artist": "Lil Baby",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9f/c0/99/9fc09958-180d-e66a-bbf7-9462289435f6/22UM1IM13098.rgb.jpg/200x200bb.jpg",
@@ -291,7 +299,7 @@
    "genre": "Hip-Hop/Rap"
   },
   {
-   "rank": 12,
+   "rank": 13,
    "name": "Freestyle",
    "artist": "Lil Baby",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/93/e7/aa/93e7aa59-da8b-15bc-2992-5803f70fe8fa/17UM1IM55478.rgb.jpg/200x200bb.jpg",
@@ -299,36 +307,28 @@
    "genre": "Hip-Hop/Rap"
   },
   {
-   "rank": 13,
-   "name": "stupid song",
-   "artist": "Olivia Rodrigo",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/stupid-song/1889992111?i=1889992115",
-   "genre": "Pop"
-  },
-  {
    "rank": 14,
-   "name": "Stop The Wedding!",
-   "artist": "Ashe",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/55/7a/b7557aef-bb0a-cc57-25bf-979eee194f16/075679571403.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/stop-the-wedding/6795697684?i=6795697687",
-   "genre": "Pop"
-  },
-  {
-   "rank": 15,
-   "name": "Be Her",
-   "artist": "Ella Langley",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/ba/64/a1ba6484-f462-1b88-ddff-d4c014d5f265/196874018361.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/be-her/1869436835?i=1869436845",
-   "genre": "Country"
-  },
-  {
-   "rank": 16,
    "name": "Best I Ever Had",
    "artist": "Drake",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/b0/35/7eb0353b-8f25-32dd-5f5e-71d9ed700247/00602577524004.rgb.jpg/200x200bb.jpg",
    "url": "https://music.apple.com/us/album/best-i-ever-had/1452017773?i=1452017954",
    "genre": "Hip-Hop/Rap"
+  },
+  {
+   "rank": 15,
+   "name": "The Christmas Song (Merry Christmas to You)",
+   "artist": "Nat \"King\" Cole",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0f/19/eb/0f19eb0e-1d72-9b00-6e3b-4a8a6fca817d/18UMGIM52342.rgb.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/the-christmas-song-merry-christmas-to-you/1435551048?i=1435551062",
+   "genre": "Holiday"
+  },
+  {
+   "rank": 16,
+   "name": "Lies (feat. Lana Del Rey)",
+   "artist": "Zach Bryan & Lana Del Rey",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ea/98/f2/ea98f2b8-5131-29ae-2064-997234ef13bc/093624812647.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/lies-feat-lana-del-rey/6822944288?i=6822944296",
+   "genre": "Country"
   },
   {
    "rank": 17,
@@ -340,22 +340,6 @@
   },
   {
    "rank": 18,
-   "name": "the cure",
-   "artist": "Olivia Rodrigo",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/the-cure/1889992111?i=1889992123",
-   "genre": "Pop"
-  },
-  {
-   "rank": 19,
-   "name": "LIKE ME (feat. 42 Dugg & Lil Baby)",
-   "artist": "Future",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c1/27/d1/c127d12a-d259-dbd9-7d02-75056e376fb6/196589131805.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/like-me-feat-42-dugg-lil-baby/1621803882?i=1621803969",
-   "genre": "Hip-Hop/Rap"
-  },
-  {
-   "rank": 20,
    "name": "Solar Eclipse",
    "artist": "Drake & Don Toliver",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bb/45/62/bb4562a3-45a2-539c-b557-a18ea060a476/26UMGIM63616.rgb.jpg/200x200bb.jpg",
@@ -363,28 +347,44 @@
    "genre": "R&B/Soul"
   },
   {
-   "rank": 21,
-   "name": "Lies (feat. Lana Del Rey)",
-   "artist": "Zach Bryan & Lana Del Rey",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ea/98/f2/ea98f2b8-5131-29ae-2064-997234ef13bc/093624812647.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/lies-feat-lana-del-rey/6822944288?i=6822944296",
+   "rank": 19,
+   "name": "Be Her",
+   "artist": "Ella Langley",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/ba/64/a1ba6484-f462-1b88-ddff-d4c014d5f265/196874018361.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/be-her/1869436835?i=1869436845",
    "genre": "Country"
   },
   {
+   "rank": 20,
+   "name": "stupid song",
+   "artist": "Olivia Rodrigo",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/stupid-song/1889992111?i=1889992115",
+   "genre": "Pop"
+  },
+  {
+   "rank": 21,
+   "name": "LIKE ME (feat. 42 Dugg & Lil Baby)",
+   "artist": "Future",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c1/27/d1/c127d12a-d259-dbd9-7d02-75056e376fb6/196589131805.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/like-me-feat-42-dugg-lil-baby/1621803882?i=1621803969",
+   "genre": "Hip-Hop/Rap"
+  },
+  {
    "rank": 22,
-   "name": "Nicole Kidman",
-   "artist": "ADÉLA",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/77/7b/5d777b87-e796-0b3e-cef6-d37d993dd8fe/26UMGIM82371.rgb.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/nicole-kidman/6792883860?i=6792884088",
+   "name": "Stop The Wedding!",
+   "artist": "Ashe",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/55/7a/b7557aef-bb0a-cc57-25bf-979eee194f16/075679571403.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/stop-the-wedding/6795697684?i=6795697687",
    "genre": "Pop"
   },
   {
    "rank": 23,
-   "name": "Sleigh Ride",
-   "artist": "The Ronettes",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2e/92/5f/2e925fa4-6a4e-a15e-7cfc-bb3f13f053e1/mzi.ermvbetx.jpg/100x99bb.jpg",
-   "url": "https://music.apple.com/us/album/sleigh-ride/336036941?i=336037282",
-   "genre": "Music"
+   "name": "Last Christmas (Single Version)",
+   "artist": "Wham!",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/eb/4a/f9/eb4af984-fc68-56ab-7b89-1d070c04e1dd/5099765318524.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/last-christmas-single-version/202117886?i=202117984",
+   "genre": "Holiday"
   },
   {
    "rank": 24,
@@ -396,11 +396,11 @@
   },
   {
    "rank": 25,
-   "name": "I Can't Love You Anymore",
-   "artist": "Ella Langley & Morgan Wallen",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/7a/6e/d97a6e25-ef5c-0c26-64e9-266c18641a57/196874324103.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/i-cant-love-you-anymore/1895158676?i=6763091996",
-   "genre": "Country"
+   "name": "Nicole Kidman",
+   "artist": "ADÉLA",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/77/7b/5d777b87-e796-0b3e-cef6-d37d993dd8fe/26UMGIM82371.rgb.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/nicole-kidman/6792883860?i=6792884088",
+   "genre": "Pop"
   }
  ]
 }

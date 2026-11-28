@@ -7,9 +7,11 @@
 """
 import argparse
 import glob
+import hashlib
 import json
 import os
 import re
+import shutil
 import sys
 from html import escape as e
 
@@ -61,8 +63,72 @@ def get_brief(site, d):
     return old
 
 
+ARTICLES = os.path.join(os.path.dirname(DATA_DIR), "articles")
+CAT_LABELS = {"finance": "理財", "health": "健康小百科", "culture": "生活文藝"}
+
+
+def parse_markdown_post(path):
+    """讀取 articles/ 裡手寫的 Markdown 文章（格式見 articles/README.md）。格式錯誤回傳 None。"""
+    with open(path, encoding="utf-8-sig") as f:
+        text = f.read().replace("\r\n", "\n")
+    meta, body = {}, text
+    m = re.match(r"^---\n(.*?)\n---\n?(.*)$", text, re.S)
+    if m:
+        for line in m.group(1).splitlines():
+            if ":" in line:
+                k, v = line.split(":", 1)
+                meta[k.strip().lower()] = v.strip().strip('"').strip("'")
+        body = m.group(2)
+    name = os.path.splitext(os.path.basename(path))[0]
+    if name.lower() == "readme" or meta.get("draft", "").lower() in ("true", "yes", "1"):
+        return None
+    sections, cur, para = [], {"heading": "", "paragraphs": [], "tips": []}, []
+
+    def flush():
+        if para:
+            cur["paragraphs"].append(" ".join(para))
+            del para[:]
+
+    for raw in body.split("\n"):
+        line = raw.strip()
+        if line.startswith("# ") and not meta.get("title"):
+            meta["title"] = line[2:].strip()
+        elif line.startswith("## "):
+            flush()
+            if cur["paragraphs"] or cur["tips"] or cur["heading"]:
+                sections.append(cur)
+            cur = {"heading": line[3:].strip(), "paragraphs": [], "tips": []}
+        elif line.startswith(("- ", "* ")):
+            flush()
+            cur["tips"].append(line[2:].strip())
+        elif not line:
+            flush()
+        elif not line.startswith("# "):
+            para.append(line)
+    flush()
+    if cur["paragraphs"] or cur["tips"] or cur["heading"]:
+        sections.append(cur)
+    title = meta.get("title")
+    if not title or not sections:
+        print("[posts] skipped (missing title or content):", os.path.basename(path))
+        return None
+    dm = re.match(r"(\d{4}-\d{2}-\d{2})-?(.*)$", name)
+    date = meta.get("date") or (dm.group(1) if dm else now_tw().strftime("%Y-%m-%d"))
+    slug = re.sub(r"[^a-z0-9-]+", "-", name.lower()).strip("-")
+    if not slug or slug != name.lower() or slug == re.sub(r"[^0-9-]", "", slug):
+        slug = "%s-%s" % (date.replace("-", ""), hashlib.md5(name.encode("utf-8")).hexdigest()[:6])
+    cat = meta.get("category", "culture").lower()
+    first = next((x for s in sections for x in s["paragraphs"] if not x.startswith("![")), "")
+    excerpt = meta.get("excerpt") or (first[:80] + ("…" if len(first) > 80 else ""))
+    excerpt = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", excerpt).replace("**", "")
+    return {"title": title, "slug": slug, "date": date, "created": date, "cat": cat,
+            "label": meta.get("label") or CAT_LABELS.get(cat, "專欄"), "excerpt": excerpt, "sections": sections,
+            "product_ids": [x.strip() for x in meta.get("products", "").split(",") if x.strip()], "manual": True}
+
+
 def load_posts():
     posts = [load_json(p) for p in glob.glob(os.path.join(POSTS, "*.json"))]
+    posts += [parse_markdown_post(p) for p in sorted(glob.glob(os.path.join(ARTICLES, "*.md")))]
     posts = [p for p in posts if p and p.get("sections")]
     posts.sort(key=lambda p: (p["date"], p.get("created", "")), reverse=True)
     return posts
@@ -171,6 +237,9 @@ def main():
     write_text(os.path.join(PUBLIC_DIR, "search.json"),
                json.dumps(R.search_index(ctx, d, posts), ensure_ascii=False, separators=(",", ":")))
     write_text(os.path.join(PUBLIC_DIR, ".nojekyll"), "")
+    img_src = os.path.join(ARTICLES, "images")  # 手寫文章用的圖片 → /images/
+    if os.path.isdir(img_src):
+        shutil.copytree(img_src, os.path.join(PUBLIC_DIR, "images"), dirs_exist_ok=True)
     if site.get("custom_domain"):  # GitHub Pages 自訂網域
         write_text(os.path.join(PUBLIC_DIR, "CNAME"), site["custom_domain"] + "\n")
     write_feeds(ctx, posts)

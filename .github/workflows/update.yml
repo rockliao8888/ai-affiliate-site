@@ -7,6 +7,11 @@ on:
     - cron: "40 6 * * 1-5"     # 平日 14:40 台灣：收盤後更新 ETF 折溢價 / 選股
     - cron: "0 10 * * 1-5"     # 平日 18:00 台灣：證交所盤後資料完整後再更新一次
   workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "articles/**"
+      - "config/**"
 
 permissions:
   contents: write

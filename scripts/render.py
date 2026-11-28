@@ -274,11 +274,31 @@ def blog_index(ctx, posts):
     return page(ctx, "blog/index.html", "專欄文章", body, "理財、健康、生活專欄", aff_box(ctx, "blog", 2))
 
 
+# ---- 手寫文章的簡易 Markdown：**粗體**、[文字](https://網址)、單獨一行的 ![說明](https://圖片網址) ----
+_MD_IMG = re.compile(r"^!\[([^\]]*)\]\((https?://[^\s)]+)\)$")
+_MD_LINK = re.compile(r"\[([^\]]+)\]\((https?://[^\s)]+)\)")
+_MD_BOLD = re.compile(r"\*\*(.+?)\*\*")
+
+
+def md_inline(text):
+    t = e(text)
+    t = _MD_LINK.sub(lambda m: '<a href="%s" target="_blank" rel="sponsored nofollow noopener">%s</a>' % (m.group(2), m.group(1)), t)
+    return _MD_BOLD.sub(r"<b>\1</b>", t)
+
+
+def md_para(text):
+    m = _MD_IMG.match(text.strip())
+    if m:
+        return '<p><img loading="lazy" src="%s" alt="%s" style="max-width:100%%;border-radius:12px"></p>' % (e(m.group(2)), e(m.group(1)))
+    return "<p>%s</p>" % md_inline(text)
+
+
 def article_page(ctx, p):
     secs = []
     for s in p["sections"]:
-        tips = ("<ul>%s</ul>" % "".join("<li>%s</li>" % e(t) for t in s.get("tips", []))) if s.get("tips") else ""
-        secs.append("<h2>%s</h2>%s%s" % (e(s["heading"]), "".join("<p>%s</p>" % e(x) for x in s["paragraphs"]), tips))
+        tips = ("<ul>%s</ul>" % "".join("<li>%s</li>" % md_inline(t) for t in s.get("tips", []))) if s.get("tips") else ""
+        secs.append("%s%s%s" % ("<h2>%s</h2>" % e(s["heading"]) if s.get("heading") else "",
+                                "".join(md_para(x) for x in s["paragraphs"]), tips))
     mid = len(secs) // 2
     inline = aff_box(ctx, "blog", 3, p.get("product_ids") or None) if p.get("product_ids") else ""
     body = ('<article><span class="tag">%s</span> <span class="mini">%s</span><h1>%s</h1><p class="sub">%s</p>%s%s%s%s</article>'

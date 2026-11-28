@@ -82,19 +82,19 @@
   },
   {
    "rank": 11,
-   "name": "嗒奇：機械鍵盤",
-   "artist": "Paulus (KR)",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/9d/62/139d621a-f4af-fedf-3370-8265380c3a97/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/%E5%97%92%E5%A5%87-%E6%A9%9F%E6%A2%B0%E9%8D%B5%E7%9B%A4/id6790016733",
-   "genre": "工具程式"
-  },
-  {
-   "rank": 12,
    "name": "TABA - 韓國搭車",
    "artist": "Globaleur",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e0/b4/21/e0b421a4-d2da-0446-0bba-a7da5872dcdf/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/200x200bb.png",
    "url": "https://apps.apple.com/tw/app/taba-%E9%9F%93%E5%9C%8B%E6%90%AD%E8%BB%8A/id6466561408",
    "genre": "旅遊"
+  },
+  {
+   "rank": 12,
+   "name": "嗒奇：機械鍵盤",
+   "artist": "Paulus (KR)",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/9d/62/139d621a-f4af-fedf-3370-8265380c3a97/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/%E5%97%92%E5%A5%87-%E6%A9%9F%E6%A2%B0%E9%8D%B5%E7%9B%A4/id6790016733",
+   "genre": "工具程式"
   },
   {
    "rank": 13,
@@ -170,11 +170,11 @@
   },
   {
    "rank": 22,
-   "name": "集保e手掌握(集保e存摺/手機存摺)",
-   "artist": "臺灣集中保管結算所",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c0/c3/dc/c0c3dccb-e169-cd23-6dec-752a05917420/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/%E9%9B%86%E4%BF%9De%E6%89%8B%E6%8E%8C%E6%8F%A1-%E9%9B%86%E4%BF%9De%E5%AD%98%E6%91%BA-%E6%89%8B%E6%A9%9F%E5%AD%98%E6%91%BA/id1191681741",
-   "genre": "財經"
+   "name": "萬家福 PROSPERiTY PLAZA",
+   "artist": "Uni-Prosperity Lifestyle Corp.",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3f/5a/19/3f5a1926-0954-bc35-2138-805365359b5b/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/%E8%90%AC%E5%AE%B6%E7%A6%8F-prosperity-plaza/id6761046326",
+   "genre": "購物"
   },
   {
    "rank": 23,
@@ -186,19 +186,19 @@
   },
   {
    "rank": 24,
-   "name": "萬家福 PROSPERiTY PLAZA",
-   "artist": "Uni-Prosperity Lifestyle Corp.",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3f/5a/19/3f5a1926-0954-bc35-2138-805365359b5b/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/%E8%90%AC%E5%AE%B6%E7%A6%8F-prosperity-plaza/id6761046326",
-   "genre": "購物"
-  },
-  {
-   "rank": 25,
    "name": "Google One",
    "artist": "Google",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/63/df/0363dfe4-21f3-68cc-f10f-abc29df67195/logo_one_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-0-85-220.png/200x200bb.png",
    "url": "https://apps.apple.com/tw/app/google-one/id1451784328",
    "genre": "生產力工具"
+  },
+  {
+   "rank": 25,
+   "name": "集保e手掌握(集保e存摺/手機存摺)",
+   "artist": "臺灣集中保管結算所",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c0/c3/dc/c0c3dccb-e169-cd23-6dec-752a05917420/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/%E9%9B%86%E4%BF%9De%E6%89%8B%E6%8E%8C%E6%8F%A1-%E9%9B%86%E4%BF%9De%E5%AD%98%E6%91%BA-%E6%89%8B%E6%A9%9F%E5%AD%98%E6%91%BA/id1191681741",
+   "genre": "財經"
   }
  ],
  "podcasts": [

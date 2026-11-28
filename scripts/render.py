@@ -6,7 +6,7 @@ from urllib.parse import quote
 
 NAV = [("index.html", "首頁"), ("stocks.html", "潛力觀察股"), ("etf.html", "ETF 折溢價"),
        ("fx.html", "匯率"), ("music.html", "音樂榜"), ("books.html", "暢銷書"),
-       ("movies.html", "電影榜"), ("apps.html", "App/Podcast"), ("news.html", "熱門新聞"),
+       ("movies.html", "電影榜"), ("top10.html", "10大熱門"), ("apps.html", "App/Podcast"), ("news.html", "熱門新聞"),
        ("health.html", "健康小百科"), ("blog/index.html", "專欄")]
 
 CSS = """
@@ -311,6 +311,57 @@ def article_page(ctx, p):
     return page(ctx, "blog/%s.html" % p["slug"], p["title"], body, p["excerpt"], side)
 
 
+# ------------------------------------------------------- 10 大熱門 ----
+def _views(n):
+    if not n:
+        return ""
+    if n >= 1e8:
+        return "%.1f 億次觀看" % (n / 1e8)
+    if n >= 1e4:
+        return "%.1f 萬次觀看" % (n / 1e4)
+    return "{:,} 次觀看".format(n)
+
+
+def top10_sets(d):
+    """回傳 [(key, 標題, 圖示, 說明, items, 副標函式)]，沒有資料的榜單不列出。"""
+    yt, an, dr = d.get("youtube") or {}, d.get("anime") or {}, d.get("drama") or {}
+    sets = [
+        ("yt", "YouTube 熱門影片", "▶️", "YouTube 台灣發燒影片，依觀看熱度排序", yt.get("videos", []),
+         lambda x: "%s · %s" % (x.get("artist") or "", _views(x.get("views")))),
+        ("ytm", "YouTube 熱門音樂", "🎵", "YouTube 台灣熱門音樂影片", yt.get("music", []),
+         lambda x: "%s · %s" % (x.get("artist") or "", _views(x.get("views")))),
+        ("anime", "本季熱門動漫", "🍿", "本季播出中的動畫，依 MyAnimeList 追蹤人數排序", an.get("items", []),
+         lambda x: " · ".join(t for t in (x.get("jp") or x.get("alt"), "%s 人追蹤" % "{:,}".format(x["members"]) if x.get("members") else "") if t)),
+        ("drama", "Netflix 台灣熱門影集", "📺", "Netflix 官方每週 Top 10（%s 當週）" % dr.get("week", ""), dr.get("items", []),
+         lambda x: " · ".join(t for t in (x.get("season"), "上榜第 %d 週" % x["weeks"] if x.get("weeks") else "") if t)),
+    ]
+    return [z for z in sets if z[4]]
+
+
+def _top_list(items, sub, k=10, extra=None):
+    lis = []
+    for x in items[:k]:
+        img = '<img loading="lazy" alt="" src="%s">' % e(x["img"]) if x.get("img") else ""
+        more = extra(x) if extra else ""
+        lis.append('<li><b>%d</b>%s<div class="t"><div><a href="%s" target="_blank" rel="noopener">%s</a></div><small>%s</small>%s</div></li>'
+                   % (x["rank"], img, e(x["url"]), e(x["name"] or ""), e(sub(x)), more))
+    return '<ol class="rank">%s</ol>' % "".join(lis)
+
+
+def top10_page(ctx, d):
+    sets = top10_sets(d)
+    cards = "".join('<div class="card" id="%s"><h3>%s %s</h3><p class="mini">%s</p>%s</div>'
+                    % (k, ic, e(t), e(desc), _top_list(items, sub))
+                    for k, t, ic, desc, items, sub in sets)
+    body = ('<h1>10 大熱門：影片、音樂、動漫、追劇</h1><p class="sub">每日自動更新｜點標題前往官方平台觀看</p>%s'
+            '<div class="grid">%s</div>%s<p class="note">排行資料來自 YouTube、MyAnimeList（Jikan API）與 Netflix Top 10 官方公開資料，'
+            '僅列標題並連結至原平台，著作權屬原權利人所有。</p>'
+            % ("".join(note_stale(d, k) for k in ("youtube", "anime", "drama")),
+               cards or '<p class="mini">排行資料準備中。</p>', ad_slot(ctx)))
+    return page(ctx, "top10.html", "10 大熱門影片、音樂、動漫、追劇", body,
+                "YouTube 熱門影片與音樂、本季熱門動漫、Netflix 台灣熱門影集排行", aff_box(ctx, "movies", 2))
+
+
 HOME_CSS = """
 .portal{max-width:1480px}
 .shortcuts{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:6px;max-width:1000px;margin:0 auto 22px}
@@ -459,6 +510,13 @@ def home_page(ctx, d, brief, posts):
         _tile("🎤 華語熱歌", "music.html", thumbs(m.get("zh", []), lambda x: ctx.apple(x["url"]), lambda x: x.get("artist") or "")),
         _tile("🎧 英文熱歌", "music.html", thumbs(m.get("en", []), lambda x: ctx.apple(x["url"]), lambda x: x.get("artist") or "")),
         _tile("🎬 熱門電影", "movies.html", thumbs(mv.get("items", []), lambda x: ctx.apple(x["url"]), lambda x: x.get("genre") or "")),
+    ] + [
+        _tile("%s %s" % (ic, t), "top10.html#" + k, '<ul class="lst thumbs">%s</ul>' % "".join(
+            '<li>%s<div><a href="%s" target="_blank" rel="noopener">%d. %s</a><small>%s</small></div></li>'
+            % ('<img loading="lazy" alt="" src="%s">' % e(x["img"]) if x.get("img") else "", e(x["url"]), x["rank"], e(x["name"] or ""), e(sub(x)))
+            for x in items[:5]))
+        for k, t, ic, desc, items, sub in top10_sets(d)
+    ] + [
         _aff_tile(affs[1], gcls[1]) if len(affs) > 1 else "",
         _tile("📚 暢銷書", "books.html", thumbs(b.get("items", []), lambda x: ctx.book(x["name"]), lambda x: x.get("artist") or "")),
         _tile("💱 今日匯率", "fx.html", fx_li),
@@ -471,7 +529,7 @@ def home_page(ctx, d, brief, posts):
         _aff_tile(affs[3], gcls[3]) if len(affs) > 3 else "",
         _tile("🎭 娛樂新聞", "news.html", news_li(n.get("娛樂", []))),
     ]
-    tabs = [("index.html", "探索"), ("stocks.html", "財經"), ("etf.html", "ETF"), ("music.html", "音樂"), ("movies.html", "影音"),
+    tabs = [("index.html", "探索"), ("stocks.html", "財經"), ("etf.html", "ETF"), ("music.html", "音樂"), ("movies.html", "影音"), ("top10.html", "10大熱門"),
             ("books.html", "閱讀"), ("news.html", "新聞"), ("health.html", "健康"), ("blog/index.html", "專欄")]
     body = ('<style>%s</style><div class="portal">'
             '%s%s'
@@ -655,6 +713,9 @@ def search_index(ctx, d, posts):
         add(x["name"], ctx.apple(x.get("url")), "App", "免費榜第 %d 名 · %s" % (x["rank"], x.get("genre") or ""))
     for x in a.get("podcasts", []):
         add(x["name"], ctx.apple(x.get("url")), "Podcast", "第 %d 名 · %s" % (x["rank"], x.get("artist") or ""))
+    for k, t, ic, desc, items, sub in top10_sets(d):
+        for x in items:
+            add(x["name"], x["url"], t, "第 %d 名 · %s" % (x["rank"], sub(x)), w=1)
     for sec, items in (d.get("news") or {}).items():
         for x in items:
             title = re.sub(r"\s*｜.*$", "", x["title"].rsplit(" - ", 1)[0])

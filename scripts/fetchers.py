@@ -1,5 +1,9 @@
 """各類公開資料抓取。每個 fetcher 失敗時回傳 None，由 build.py 改用上次快照。"""
+import csv
+import io
+import os
 import xml.etree.ElementTree as ET
+from urllib.parse import quote, urlencode
 
 from util import http_get, http_json, to_float
 
@@ -163,6 +167,85 @@ def fetch_news():
     return out or None
 
 
+# ---------------------------------------------------------- 10 大熱門 ----
+def _yt(category=None, n=10):
+    key = os.environ.get("YOUTUBE_API_KEY")
+    if not key:
+        return []
+    q = {"part": "snippet,statistics", "chart": "mostPopular", "regionCode": "TW", "hl": "zh-TW",
+         "maxResults": n, "key": key}
+    if category:
+        q["videoCategoryId"] = category
+    j = http_json("https://www.googleapis.com/youtube/v3/videos?" + urlencode(q))
+    out = []
+    for i, v in enumerate(j.get("items", [])):
+        sn, st = v.get("snippet", {}), v.get("statistics", {})
+        th = sn.get("thumbnails", {})
+        out.append({"rank": i + 1, "name": (sn.get("localized") or {}).get("title") or sn.get("title"),
+                    "artist": sn.get("channelTitle", ""), "views": int(st.get("viewCount") or 0),
+                    "img": (th.get("medium") or th.get("default") or {}).get("url", ""),
+                    "url": "https://www.youtube.com/watch?v=" + v.get("id", "")})
+    return out
+
+
+def fetch_youtube():
+    """YouTube 台灣發燒影片與熱門音樂影片（需要 YOUTUBE_API_KEY，免費額度即可）。"""
+    videos = _yt()
+    try:
+        music = _yt("10")
+    except RuntimeError:  # 少數地區不支援依類別取熱門，影片榜仍可用
+        music = []
+    return {"videos": videos, "music": music} if (videos or music) else None
+
+
+def fetch_anime():
+    """本季動畫，依 MyAnimeList 追蹤人數排序（Jikan API，免金鑰）。"""
+    seen, rows = set(), []
+    for page in (1, 2):
+        try:
+            j = http_json("https://api.jikan.moe/v4/seasons/now?sfw=true&page=%d" % page)
+        except RuntimeError:
+            break
+        for a in j.get("data", []):
+            if a.get("mal_id") in seen:
+                continue
+            seen.add(a.get("mal_id"))
+            rows.append(a)
+        if not (j.get("pagination") or {}).get("has_next_page"):
+            break
+    rows.sort(key=lambda a: -(a.get("members") or 0))
+    out = []
+    for i, a in enumerate(rows[:10]):
+        jp = a.get("title_japanese") or ""
+        name = a.get("title") or jp
+        out.append({"rank": i + 1, "name": name, "alt": a.get("title_english") or "", "jp": jp,
+                    "members": a.get("members") or 0, "score": a.get("score"), "episodes": a.get("episodes"),
+                    "img": ((a.get("images") or {}).get("jpg") or {}).get("image_url", ""),
+                    "url": a.get("url") or ""})
+    return {"items": out} if out else None
+
+
+def fetch_drama():
+    """Netflix 官方每週 Top 10：台灣影集榜（免金鑰）。"""
+    tsv = http_get("https://www.netflix.com/tudum/top10/data/all-weeks-countries.tsv", timeout=90)
+    rows = [r for r in csv.DictReader(io.StringIO(tsv), delimiter="\t")
+            if r.get("country_iso2") == "TW" and r.get("category") == "TV"]
+    if not rows:
+        return None
+    week = max(r["week"] for r in rows)
+    cur = sorted((r for r in rows if r["week"] == week), key=lambda r: int(r.get("weekly_rank") or 99))
+    out = []
+    for r in cur[:10]:
+        title = r.get("show_title") or ""
+        season = r.get("season_title") or ""
+        if season in ("N/A", title):
+            season = ""
+        out.append({"rank": int(r["weekly_rank"]), "name": title, "season": season,
+                    "weeks": int(r.get("cumulative_weeks_in_top_10") or 1), "img": "",
+                    "url": "https://www.netflix.com/search?q=" + quote(title)})
+    return {"week": week, "items": out}
+
+
 ALL = {
     "etf": fetch_etf_premium,
     "stocks": fetch_stock_screen,
@@ -172,4 +255,7 @@ ALL = {
     "movies": fetch_movies,
     "apps": fetch_apps_podcasts,
     "news": fetch_news,
+    "youtube": fetch_youtube,
+    "anime": fetch_anime,
+    "drama": fetch_drama,
 }

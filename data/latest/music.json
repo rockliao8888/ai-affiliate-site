@@ -98,19 +98,19 @@
   },
   {
    "rank": 13,
-   "name": "Hooligan",
-   "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/hooligan/1868862375?i=1868862377",
-   "genre": "流行樂"
-  },
-  {
-   "rank": 14,
    "name": "Good Goodbye",
    "artist": "HWASA",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/bd/f4/7cbdf4a9-50e6-ec52-7e54-644c80e6b86d/cover_KM0023526_1.jpg/200x200bb.jpg",
    "url": "https://music.apple.com/tw/album/good-goodbye/1843518967?i=1843518968",
    "genre": "韓國流行樂"
+  },
+  {
+   "rank": 14,
+   "name": "Hooligan",
+   "artist": "防彈少年團",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/hooligan/1868862375?i=1868862377",
+   "genre": "流行樂"
   },
   {
    "rank": 15,
@@ -154,14 +154,6 @@
   },
   {
    "rank": 20,
-   "name": "Butter",
-   "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/28/6c/66286c9f-6bea-4f99-ec15-507b0c95dc04/196006991739_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/butter/1598666015?i=1598666350",
-   "genre": "韓國流行樂"
-  },
-  {
-   "rank": 21,
    "name": "聽見下雨的聲音",
    "artist": "周杰倫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/16/db/ff/16dbff09-0750-29b0-07b7-3fa44f8a556e/dj.nzqvfsza.jpg/200x200bb.jpg",
@@ -169,15 +161,15 @@
    "genre": "華語流行樂"
   },
   {
-   "rank": 22,
-   "name": "Body to Body",
+   "rank": 21,
+   "name": "Butter",
    "artist": "防彈少年團",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/body-to-body/1868862375?i=1868862376",
-   "genre": "流行樂"
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/28/6c/66286c9f-6bea-4f99-ec15-507b0c95dc04/196006991739_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/butter/1598666015?i=1598666350",
+   "genre": "韓國流行樂"
   },
   {
-   "rank": 23,
+   "rank": 22,
    "name": "稻香",
    "artist": "周杰倫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/1b/63/9e/1b639e5b-f8ca-a6e1-8612-6396bc9ff0eb/4711448407424.jpg/100x134bb.jpg",
@@ -185,20 +177,28 @@
    "genre": "華語流行樂"
   },
   {
-   "rank": 24,
-   "name": "2.0",
+   "rank": 23,
+   "name": "Body to Body",
    "artist": "防彈少年團",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/tw/album/2-0/1868862375?i=1868862380",
+   "url": "https://music.apple.com/tw/album/body-to-body/1868862375?i=1868862376",
    "genre": "流行樂"
   },
   {
-   "rank": 25,
+   "rank": 24,
    "name": "不情之請",
    "artist": "張惠妹",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5c/4a/2e/5c4a2ec2-520f-a6b4-dc4f-cad6be6ff33c/26UM1IM47798.rgb.jpg/200x200bb.jpg",
    "url": "https://music.apple.com/tw/album/%E4%B8%8D%E6%83%85%E4%B9%8B%E8%AB%8B/6837211876?i=6837211884",
    "genre": "華語流行樂"
+  },
+  {
+   "rank": 25,
+   "name": "2.0",
+   "artist": "防彈少年團",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/tw/album/2-0/1868862375?i=1868862380",
+   "genre": "流行樂"
   }
  ],
  "en": [
@@ -236,19 +236,19 @@
   },
   {
    "rank": 5,
-   "name": "Last Thing You Need",
-   "artist": "Morgan Wallen",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/last-thing-you-need/6812476961?i=6812477290",
-   "genre": "Country"
-  },
-  {
-   "rank": 6,
    "name": "Sleigh Ride",
    "artist": "The Ronettes",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2e/92/5f/2e925fa4-6a4e-a15e-7cfc-bb3f13f053e1/mzi.ermvbetx.jpg/100x99bb.jpg",
    "url": "https://music.apple.com/us/album/sleigh-ride/336036941?i=336037282",
    "genre": "Music"
+  },
+  {
+   "rank": 6,
+   "name": "Last Thing You Need",
+   "artist": "Morgan Wallen",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/last-thing-you-need/6812476961?i=6812477290",
+   "genre": "Country"
   },
   {
    "rank": 7,
@@ -300,14 +300,6 @@
   },
   {
    "rank": 13,
-   "name": "Janice STFU",
-   "artist": "Drake",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/35/b9/06/35b90629-a873-14f8-4789-ffc324960038/26UMGIM63614.rgb.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/janice-stfu/6769568449?i=6769568596",
-   "genre": "Hip-Hop/Rap"
-  },
-  {
-   "rank": 14,
    "name": "Last Christmas (Single Version)",
    "artist": "Wham!",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/eb/4a/f9/eb4af984-fc68-56ab-7b89-1d070c04e1dd/5099765318524.jpg/200x200bb.jpg",
@@ -315,23 +307,15 @@
    "genre": "Holiday"
   },
   {
-   "rank": 15,
-   "name": "Housewife",
-   "artist": "Tate McRae",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/64/e4/6964e483-c02c-e389-14f4-c426e8c65f2c/196874840146.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/housewife/6822497770?i=6822497774",
-   "genre": "Pop"
-  },
-  {
-   "rank": 16,
-   "name": "In A Minute",
-   "artist": "Lil Baby",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9f/c0/99/9fc09958-180d-e66a-bbf7-9462289435f6/22UM1IM13098.rgb.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/in-a-minute/1648587138?i=1648587330",
+   "rank": 14,
+   "name": "Janice STFU",
+   "artist": "Drake",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/35/b9/06/35b90629-a873-14f8-4789-ffc324960038/26UMGIM63614.rgb.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/janice-stfu/6769568449?i=6769568596",
    "genre": "Hip-Hop/Rap"
   },
   {
-   "rank": 17,
+   "rank": 15,
    "name": "It's Beginning To Look a Lot Like Christmas",
    "artist": "Michael Bublé",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/37/2d/6e/372d6e16-7a32-91f0-1a03-0f2d9dbe389e/093624942788.jpg/200x200bb.jpg",
@@ -339,15 +323,15 @@
    "genre": "Holiday"
   },
   {
-   "rank": 18,
-   "name": "Freestyle",
-   "artist": "Lil Baby",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/93/e7/aa/93e7aa59-da8b-15bc-2992-5803f70fe8fa/17UM1IM55478.rgb.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/freestyle/1440928174?i=1440929293",
-   "genre": "Hip-Hop/Rap"
+   "rank": 16,
+   "name": "Housewife",
+   "artist": "Tate McRae",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/64/e4/6964e483-c02c-e389-14f4-c426e8c65f2c/196874840146.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/housewife/6822497770?i=6822497774",
+   "genre": "Pop"
   },
   {
-   "rank": 19,
+   "rank": 17,
    "name": "Rockin' Around the Christmas Tree (Single)",
    "artist": "Brenda Lee",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d4/ea/6b/d4ea6b89-f9ac-f476-270d-66931315bc4c/06UMGIM02727.rgb.jpg/100x99bb.jpg",
@@ -355,15 +339,15 @@
    "genre": "Holiday"
   },
   {
-   "rank": 20,
-   "name": "Lies (feat. Lana Del Rey)",
-   "artist": "Zach Bryan & Lana Del Rey",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ea/98/f2/ea98f2b8-5131-29ae-2064-997234ef13bc/093624812647.jpg/200x200bb.jpg",
-   "url": "https://music.apple.com/us/album/lies-feat-lana-del-rey/6822944288?i=6822944296",
-   "genre": "Country"
+   "rank": 18,
+   "name": "In A Minute",
+   "artist": "Lil Baby",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9f/c0/99/9fc09958-180d-e66a-bbf7-9462289435f6/22UM1IM13098.rgb.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/in-a-minute/1648587138?i=1648587330",
+   "genre": "Hip-Hop/Rap"
   },
   {
-   "rank": 21,
+   "rank": 19,
    "name": "Like It's Christmas",
    "artist": "Jonas Brothers",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/27/9d/df/279ddfe1-74db-1929-b48e-8faade18e3a1/19UMGIM98457.rgb.jpg/200x200bb.jpg",
@@ -371,12 +355,28 @@
    "genre": "Holiday"
   },
   {
-   "rank": 22,
+   "rank": 20,
    "name": "Santa Tell Me",
    "artist": "Ariana Grande",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/60/c8/2b/60c82b22-cd58-cdcd-5b51-6fad7a8b7055/14UMGIM55455.rgb.jpg/200x200bb.jpg",
    "url": "https://music.apple.com/us/album/santa-tell-me/1444319981?i=1444319982",
    "genre": "Holiday"
+  },
+  {
+   "rank": 21,
+   "name": "Freestyle",
+   "artist": "Lil Baby",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/93/e7/aa/93e7aa59-da8b-15bc-2992-5803f70fe8fa/17UM1IM55478.rgb.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/freestyle/1440928174?i=1440929293",
+   "genre": "Hip-Hop/Rap"
+  },
+  {
+   "rank": 22,
+   "name": "Lies (feat. Lana Del Rey)",
+   "artist": "Zach Bryan & Lana Del Rey",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ea/98/f2/ea98f2b8-5131-29ae-2064-997234ef13bc/093624812647.jpg/200x200bb.jpg",
+   "url": "https://music.apple.com/us/album/lies-feat-lana-del-rey/6822944288?i=6822944296",
+   "genre": "Country"
   },
   {
    "rank": 23,

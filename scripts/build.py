@@ -222,6 +222,7 @@ def main():
         "music.html": R.music_page(ctx, d),
         "books.html": R.books_page(ctx, d),
         "movies.html": R.movies_page(ctx, d),
+        "top10.html": R.top10_page(ctx, d),
         "apps.html": R.apps_page(ctx, d),
         "news.html": R.news_page(ctx, d),
         "health.html": R.health_page(ctx, posts),

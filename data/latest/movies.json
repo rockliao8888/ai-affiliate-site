@@ -2,19 +2,19 @@
  "items": [
   {
    "rank": 1,
-   "name": "飢餓遊戲 The Hunger Games",
-   "genre": "動作與歷險",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/14/dd/b5/14ddb5cb-a98f-b35b-c032-342827bdefce/HungerGamesThe_iTunes_Transactional-Movies-Cover.jpg/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E9%A3%A2%E9%A4%93%E9%81%8A%E6%88%B2-the-hunger-games/id521035514?uo=2",
-   "summary": "《飢餓遊戲》系列的第一部電影。根據暢銷小說改編，十六歲的凱妮絲（珍妮佛勞倫斯飾）自願代替妹妹參加飢餓遊戲。"
-  },
-  {
-   "rank": 2,
    "name": "飢餓遊戲：星火燎原",
    "genre": "動作與歷險",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video114/v4/27/17/3e/27173ebc-5ecf-ab35-e113-7050f9aa1389/pr_source.lsr/115x170bb.png",
    "url": "https://itunes.apple.com/tw/movie/%E9%A3%A2%E9%A4%93%E9%81%8A%E6%88%B2-%E6%98%9F%E7%81%AB%E7%87%8E%E5%8E%9F/id1449540500?uo=2",
    "summary": "在【飢餓遊戲：星火燎原】中，一開始凱妮絲·艾佛丁在贏得第74屆飢餓遊戲後，跟同鄉貢品比德·梅爾拉克一起安全返家，不過獲勝也表示他們又要再度離開親友，到各區展開「勝利者巡禮」。在途中，凱妮絲感覺到叛亂似乎到一觸即發，但是都城仍大權在握，接著史"
+  },
+  {
+   "rank": 2,
+   "name": "飢餓遊戲 The Hunger Games",
+   "genre": "動作與歷險",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/14/dd/b5/14ddb5cb-a98f-b35b-c032-342827bdefce/HungerGamesThe_iTunes_Transactional-Movies-Cover.jpg/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E9%A3%A2%E9%A4%93%E9%81%8A%E6%88%B2-the-hunger-games/id521035514?uo=2",
+   "summary": "《飢餓遊戲》系列的第一部電影。根據暢銷小說改編，十六歲的凱妮絲（珍妮佛勞倫斯飾）自願代替妹妹參加飢餓遊戲。"
   },
   {
    "rank": 3,
@@ -50,14 +50,6 @@
   },
   {
    "rank": 7,
-   "name": "飢餓遊戲：鳴鳥與游蛇之歌",
-   "genre": "動作與歷險",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/af/c6/70/afc6707f-5f66-decc-caaf-125bd870a664/GPitTW24036_PosterArt_tw.png/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E9%A3%A2%E9%A4%93%E9%81%8A%E6%88%B2-%E9%B3%B4%E9%B3%A5%E8%88%87%E6%B8%B8%E8%9B%87%E4%B9%8B%E6%AD%8C/id1733210853?uo=2",
-   "summary": "《飢餓遊戲：鳴鳥與游蛇之歌》背景設定於《飢餓遊戲系列》數十年前，故事聚焦在年輕的「史諾總統」科利奧蘭納斯史諾身上，曾經輝煌的史諾家族在戰後家道中落，十八歲的史諾成為振興落魄家族的最後希望。為了維持生計，史諾不得不接受指派，擔任第十屆飢餓遊戲"
-  },
-  {
-   "rank": 8,
    "name": "末日之戰",
    "genre": "劇情片",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/2f/87/40/2f874009-c4e9-1057-4291-087cc0eb1b27/a7f51d89-e555-40e5-a03a-36043ba17c39_WorldWarZ_TW_2000x3000.jpg/115x170bb.png",
@@ -65,12 +57,20 @@
    "summary": "這部懸疑片超殺！”滾石的彼得崔佛斯大力稱讚這部劇情緊湊、令人血脈賁張，描述人類潛在的末日浩劫。前聯合國人員傑瑞藍恩（布萊德彼特飾）臨危受命，協助阻擋蔓延全世界肆虐的流行病，世界各地的人口無一倖免。藍恩對抗怪病保護家人，同時尋找方法阻擋疫情爆"
   },
   {
-   "rank": 9,
+   "rank": 8,
    "name": "電影版孤獨的美食家",
    "genre": "劇情片",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/aa/c3/ef/aac3efbd-f052-8150-744e-3ff85445ab83/the_solitary_gourmet_poster_p3.lsr/115x170bb.png",
    "url": "https://itunes.apple.com/tw/movie/%E9%9B%BB%E5%BD%B1%E7%89%88%E5%AD%A4%E7%8D%A8%E7%9A%84%E7%BE%8E%E9%A3%9F%E5%AE%B6/id1847787097?uo=2",
    "summary": "從事進口雜貨銷售的井之頭五郎，是個喜歡在工作之餘到處品嚐美饌的老饕。這回，他接到前女友的女兒——千秋的委託，前往法國拜訪千秋的祖父一郎，並要幫助一郎找出童年時曾喝過的湯頭食譜。儘管線索稀少，他依舊踏上尋找「究極湯頭」的旅程，走遍法國、長崎、"
+  },
+  {
+   "rank": 9,
+   "name": "飢餓遊戲：鳴鳥與游蛇之歌",
+   "genre": "動作與歷險",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/af/c6/70/afc6707f-5f66-decc-caaf-125bd870a664/GPitTW24036_PosterArt_tw.png/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E9%A3%A2%E9%A4%93%E9%81%8A%E6%88%B2-%E9%B3%B4%E9%B3%A5%E8%88%87%E6%B8%B8%E8%9B%87%E4%B9%8B%E6%AD%8C/id1733210853?uo=2",
+   "summary": "《飢餓遊戲：鳴鳥與游蛇之歌》背景設定於《飢餓遊戲系列》數十年前，故事聚焦在年輕的「史諾總統」科利奧蘭納斯史諾身上，曾經輝煌的史諾家族在戰後家道中落，十八歲的史諾成為振興落魄家族的最後希望。為了維持生計，史諾不得不接受指派，擔任第十屆飢餓遊戲"
   },
   {
    "rank": 10,
@@ -82,6 +82,14 @@
   },
   {
    "rank": 11,
+   "name": "藍色巨星",
+   "genre": "日本動漫",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/58/7d/f2/587df28a-7213-bf6d-a918-f19026f835c6/GPitTW23166_PosterArt_tw.png/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E8%97%8D%E8%89%B2%E5%B7%A8%E6%98%9F/id1712605005?uo=2",
+   "summary": "住在仙台的高中生宮本大深受爵士樂吸引，每天都獨自在河邊吹奏次中音薩克斯風。畢業後他來到東京，與高中同學玉田俊二、同齡鋼琴家澤邊雪祈組成3人樂團「JASS」。連樂譜都看不懂，只是一心吹奏薩克斯風的大、從小就將一切獻給爵士樂的雪祈以及初學者玉田"
+  },
+  {
+   "rank": 12,
    "name": "中央車站",
    "genre": "劇情片",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video114/v4/7a/cd/0a/7acd0a57-4696-b4bb-8ff9-6c4b73728fee/pr_source.lsr/115x170bb.png",
@@ -89,20 +97,12 @@
    "summary": "中央車站是巴西里約熱內盧流量最大的車站，朵拉靠著自身識字能力，替不識字的人們寫信為生。某日，一名少婦帶著十歲的兒子約書亞給他從未謀面的父親寫信，希望約書亞的父親能夠來里約找他們，但少婦卻在一出車站後就意外身亡。留下孤苦無依的約書亞，朵拉由於"
   },
   {
-   "rank": 12,
+   "rank": 13,
    "name": "再見機器人",
    "genre": "劇情片",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/56/58/ea/5658eae0-3c1f-c2bb-de5d-cc9cb9cceff0/robot_dreams_poster_p3.lsr/115x170bb.png",
    "url": "https://itunes.apple.com/tw/movie/%E5%86%8D%E8%A6%8B%E6%A9%9F%E5%99%A8%E4%BA%BA/id1768923261?uo=2",
    "summary": "一隻住在曼哈頓的狗狗厭倦了孤獨，他決定購入高科技機器人作伴，兩人在《動物方城市》般的紐約街頭共舞同歡，友誼日漸深厚、密不可分。某日，他們在海灘上慵懶午睡，機器人醒來後卻再也無法動彈，狗狗只能帶著沈痛的心情，在夏夜中被迫離開。在無盡的等待中，"
-  },
-  {
-   "rank": 13,
-   "name": "蜘蛛人：無家日",
-   "genre": "動作與歷險",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/b0/66/f6/b066f6d1-a36d-2e60-555b-f4bcb5b8cb94/DP_10275982_SpiderManNoWayHome_2000x3000_TW.jpg/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E7%84%A1%E5%AE%B6%E6%97%A5/id1598961641?uo=2",
-   "summary": "彼得帕克的蜘蛛人身分曝光，甚至被控殺害了神秘法師，讓他個人生活被超級英雄的身分大受影響，再也無法回到原本平凡的生活。他向奇異博士史傳奇尋求幫助，讓他重新回到沒有人知道他是蜘蛛人的時刻，竟意外的打開了多元宇宙，讓狀況變的更加危險，逼得彼得帕克"
   },
   {
    "rank": 14,
@@ -114,38 +114,6 @@
   },
   {
    "rank": 15,
-   "name": "蜘蛛人: 重生日",
-   "genre": "動作與歷險",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/fe/ea/b4/feeab4c3-2d6e-4a28-2b3f-98c3da0dd980/DP_10561485_Spider-ManBrandNewDay_2000x3000_TW.png/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E9%87%8D%E7%94%9F%E6%97%A5/id6793590242?uo=2",
-   "summary": "彼得的身體出現強大的變化，或許是阻止神秘強大威脅襲擊城市的唯一希望。"
-  },
-  {
-   "rank": 16,
-   "name": "怪獸與葛林戴華德的罪行",
-   "genre": "動作與歷險",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/39/0e/5c/390e5c00-8e70-e9f4-f4a7-cfd85c02f707/FB2_CrimesOfGrindelwald_2026_V_DD_KA_TT_2000x3000_300dpi_TW.jpg/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E6%80%AA%E7%8D%B8%E8%88%87%E8%91%9B%E6%9E%97%E6%88%B4%E8%8F%AF%E5%BE%B7%E7%9A%84%E7%BD%AA%E8%A1%8C/id1440342126?uo=2",
-   "summary": "魔法世界創作者 J·K·羅琳的想像力活現在《怪獸與牠們的產地》影集中，這是在《哈利波特》推出之前的一場魔幻冒險故事。在第一個影片的片尾時，強大的黑暗巫師蓋勒·葛林戴華德 (強尼·戴普飾) 被美利堅魔法國會 (MACUSA) 和紐特·斯卡曼德"
-  },
-  {
-   "rank": 17,
-   "name": "怪獸與鄧不利多的秘密",
-   "genre": "科幻與奇幻片",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/e0/c4/77/e0c47766-224f-3e95-830c-2f5301ebf7ba/FB3_SecretsOfDumbledore_2026_V_DD_KA_TT_2000x3000_300dpi_TW.jpg/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E6%80%AA%E7%8D%B8%E8%88%87%E9%84%A7%E4%B8%8D%E5%88%A9%E5%A4%9A%E7%9A%84%E7%A7%98%E5%AF%86/id1613754352?uo=2",
-   "summary": "阿不思·鄧不利多教授 (裘德洛飾演) 知道法力強大的黑巫師蓋勒·葛林戴華德 (邁茲米克森飾演) 計畫佔領魔法世界。在無法獨力阻止的情況之下，他委託魔法動物學家紐特·斯卡曼德 (艾迪瑞德曼飾演) 帶領一隊強悍的巫師、女巫和一名勇敢的麻瓜烘焙師"
-  },
-  {
-   "rank": 18,
-   "name": "來自深淵：深沉靈魂的黎明",
-   "genre": "日本動漫",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/33/14/bc/3314bce7-5cb9-1900-5407-d7d363a574e7/pr_source.lsr/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E4%BE%86%E8%87%AA%E6%B7%B1%E6%B7%B5-%E6%B7%B1%E6%B2%89%E9%9D%88%E9%AD%82%E7%9A%84%E9%BB%8E%E6%98%8E/id1526087381?uo=2",
-   "summary": "探窟家少女莉可為了找尋身為最偉大白笛探窟家的母親萊薩，與喪失記憶的機器人少年雷古深入世界上殘存的深淵大洞「阿比斯」，一路上遇到各種神祕生物與危險，甚至結伴了生骸娜娜奇同行。\n然而在深淵底層遇到了傳說中的白笛之一「黎明卿」及其女兒，卻莫名其妙"
-  },
-  {
-   "rank": 19,
    "name": "犬夜叉劇場版 天下霸道之劍",
    "genre": "日本動漫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/0b/ec/02/0bec028f-42fd-3a9a-2860-90477b4ea626/swords_of_an_honorable_ruler_poster_p3.lsr/115x170bb.png",
@@ -153,31 +121,7 @@
    "summary": "為了爭奪偉大父親所遺留下來的傳說之劍，受盡命運捉弄的兄弟即將展開一場無法迴避的生死決鬥，唯有這把劍能夠稱霸天下！"
   },
   {
-   "rank": 20,
-   "name": "美國心玫瑰情",
-   "genre": "劇情片",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/d6/1c/3e/d61c3e9e-669c-35df-4b6e-444db04e6889/AmericanBeauty_TW_2000x3000.jpg/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E7%BE%8E%E5%9C%8B%E5%BF%83%E7%8E%AB%E7%91%B0%E6%83%85/id286334988?uo=2",
-   "summary": "此片是奧斯卡得主山姆門德斯自編自導的處女作，他與奧斯卡最佳編劇得主亞倫博爾合作製作這部以美國郊區為主體的電影，描寫它的黑暗、機智，和真實的一面。被超過65位以上的評論家評為年度最佳影片，也榮獲了五座奧斯卡獎，包括最佳影片獎。主角凱文史貝西和"
-  },
-  {
-   "rank": 21,
-   "name": "愛你致死不渝",
-   "genre": "恐怖片",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/e2/4d/97/e24d9774-8cc1-d970-8778-7e9850571fd6/OBS_Digital_Keyart_APP_2000x3000_TW_ZH-T_XYi.jpg/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D/id1895899231?uo=2",
-   "summary": "一名無可救藥的浪漫主義者，為了贏得暗戀對象的芳心而折斷神祕的「一願柳」。他確實得償所願，但他很快就發現，有些渴望會要人付出黑暗而邪惡的代價。"
-  },
-  {
-   "rank": 22,
-   "name": "超時空甩尾",
-   "genre": "日本動漫",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/1e/76/82/1e768205-a198-0b9c-eee6-e6188664c2a7/redline_poster_p3.lsr/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E8%B6%85%E6%99%82%E7%A9%BA%E7%94%A9%E5%B0%BE/id1715225272?uo=2",
-   "summary": "在傳統四輪車被空氣動力車取代的未來世界，有著五年舉辦一次的賽車比賽，這個名為『REDLINE』的賽事，旨在選出宇宙最快賽車手，參賽者除了要有高超的駕駛技巧外，大會是允許所有參賽者使用武器裝備攻擊或干擾他人，也因此比賽過程中險象環生，不僅要心"
-  },
-  {
-   "rank": 23,
+   "rank": 16,
    "name": "犬夜叉劇場版 鏡中的夢幻城",
    "genre": "日本動漫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/1a/c0/aa/1ac0aad0-2661-b68c-e9dc-0d929b97c833/the_castle_beyond_the_looking_glass_poster_p3.lsr/115x170bb.png",
@@ -185,7 +129,39 @@
    "summary": "彌勒手中的「風穴」消失了、一連持續數日的「滿月之夜」、遭到封印的天空公主「神久夜」，這一切都因「夢幻城」的出現而遭到破壞！\n令人恐懼的「神久夜公主」傳說之門即將開啟。阿籬與犬夜叉，兩人的心願能否實現？"
   },
   {
-   "rank": 24,
+   "rank": 17,
+   "name": "蜘蛛人：無家日",
+   "genre": "動作與歷險",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/b0/66/f6/b066f6d1-a36d-2e60-555b-f4bcb5b8cb94/DP_10275982_SpiderManNoWayHome_2000x3000_TW.jpg/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E7%84%A1%E5%AE%B6%E6%97%A5/id1598961641?uo=2",
+   "summary": "彼得帕克的蜘蛛人身分曝光，甚至被控殺害了神秘法師，讓他個人生活被超級英雄的身分大受影響，再也無法回到原本平凡的生活。他向奇異博士史傳奇尋求幫助，讓他重新回到沒有人知道他是蜘蛛人的時刻，竟意外的打開了多元宇宙，讓狀況變的更加危險，逼得彼得帕克"
+  },
+  {
+   "rank": 18,
+   "name": "美國心玫瑰情",
+   "genre": "劇情片",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/d6/1c/3e/d61c3e9e-669c-35df-4b6e-444db04e6889/AmericanBeauty_TW_2000x3000.jpg/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E7%BE%8E%E5%9C%8B%E5%BF%83%E7%8E%AB%E7%91%B0%E6%83%85/id286334988?uo=2",
+   "summary": "此片是奧斯卡得主山姆門德斯自編自導的處女作，他與奧斯卡最佳編劇得主亞倫博爾合作製作這部以美國郊區為主體的電影，描寫它的黑暗、機智，和真實的一面。被超過65位以上的評論家評為年度最佳影片，也榮獲了五座奧斯卡獎，包括最佳影片獎。主角凱文史貝西和"
+  },
+  {
+   "rank": 19,
+   "name": "超時空甩尾",
+   "genre": "日本動漫",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/1e/76/82/1e768205-a198-0b9c-eee6-e6188664c2a7/redline_poster_p3.lsr/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E8%B6%85%E6%99%82%E7%A9%BA%E7%94%A9%E5%B0%BE/id1715225272?uo=2",
+   "summary": "在傳統四輪車被空氣動力車取代的未來世界，有著五年舉辦一次的賽車比賽，這個名為『REDLINE』的賽事，旨在選出宇宙最快賽車手，參賽者除了要有高超的駕駛技巧外，大會是允許所有參賽者使用武器裝備攻擊或干擾他人，也因此比賽過程中險象環生，不僅要心"
+  },
+  {
+   "rank": 20,
+   "name": "蜘蛛人: 重生日",
+   "genre": "動作與歷險",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/fe/ea/b4/feeab4c3-2d6e-4a28-2b3f-98c3da0dd980/DP_10561485_Spider-ManBrandNewDay_2000x3000_TW.png/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E9%87%8D%E7%94%9F%E6%97%A5/id6793590242?uo=2",
+   "summary": "彼得的身體出現強大的變化，或許是阻止神秘強大威脅襲擊城市的唯一希望。"
+  },
+  {
+   "rank": 21,
    "name": "Stand By Me 哆啦A夢2",
    "genre": "日本動漫",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video125/v4/fa/c3/d4/fac3d4fa-9e74-479a-4df0-95f7a84455cd/GPitTW21100_PosterArt_tw.png/115x170bb.png",
@@ -193,12 +169,36 @@
    "summary": "《Stand By Me 哆啦A夢2》故事將接續前作,某日突然想起幼稚園時過世的奶奶而傷心不已的大雄,在與哆啦A夢達成約定後,搭乘時光機回到過去,只為了偷偷再見奶奶一面,沒想到卻意外被奶奶發現了。奶奶雖然對於以小學生模樣現身的大雄感到訝異,"
   },
   {
+   "rank": 22,
+   "name": "怪獸與葛林戴華德的罪行",
+   "genre": "動作與歷險",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/39/0e/5c/390e5c00-8e70-e9f4-f4a7-cfd85c02f707/FB2_CrimesOfGrindelwald_2026_V_DD_KA_TT_2000x3000_300dpi_TW.jpg/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E6%80%AA%E7%8D%B8%E8%88%87%E8%91%9B%E6%9E%97%E6%88%B4%E8%8F%AF%E5%BE%B7%E7%9A%84%E7%BD%AA%E8%A1%8C/id1440342126?uo=2",
+   "summary": "魔法世界創作者 J·K·羅琳的想像力活現在《怪獸與牠們的產地》影集中，這是在《哈利波特》推出之前的一場魔幻冒險故事。在第一個影片的片尾時，強大的黑暗巫師蓋勒·葛林戴華德 (強尼·戴普飾) 被美利堅魔法國會 (MACUSA) 和紐特·斯卡曼德"
+  },
+  {
+   "rank": 23,
+   "name": "怪獸與鄧不利多的秘密",
+   "genre": "科幻與奇幻片",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/e0/c4/77/e0c47766-224f-3e95-830c-2f5301ebf7ba/FB3_SecretsOfDumbledore_2026_V_DD_KA_TT_2000x3000_300dpi_TW.jpg/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E6%80%AA%E7%8D%B8%E8%88%87%E9%84%A7%E4%B8%8D%E5%88%A9%E5%A4%9A%E7%9A%84%E7%A7%98%E5%AF%86/id1613754352?uo=2",
+   "summary": "阿不思·鄧不利多教授 (裘德洛飾演) 知道法力強大的黑巫師蓋勒·葛林戴華德 (邁茲米克森飾演) 計畫佔領魔法世界。在無法獨力阻止的情況之下，他委託魔法動物學家紐特·斯卡曼德 (艾迪瑞德曼飾演) 帶領一隊強悍的巫師、女巫和一名勇敢的麻瓜烘焙師"
+  },
+  {
+   "rank": 24,
+   "name": "星際效應",
+   "genre": "動作與歷險",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/1d/d9/4d/1dd94dc0-d104-bb14-1883-8a2af1227d06/pr_source.jpg/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E6%98%9F%E9%9A%9B%E6%95%88%E6%87%89/id965491522?uo=2",
+   "summary": "隨著地球即將毀滅，一群探險家扛起人類史上最重要的任務：越過這道銀河，到星際間尋找人類未來的可能性。由著名導演克里斯多夫·諾蘭（《The Dark Knight》電影、《Inception》）執導，《Interstellar》明星奧斯卡獎得主"
+  },
+  {
    "rank": 25,
-   "name": "藍色巨星",
+   "name": "犬夜叉劇場版 紅蓮的蓬萊島",
    "genre": "日本動漫",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/58/7d/f2/587df28a-7213-bf6d-a918-f19026f835c6/GPitTW23166_PosterArt_tw.png/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E8%97%8D%E8%89%B2%E5%B7%A8%E6%98%9F/id1712605005?uo=2",
-   "summary": "住在仙台的高中生宮本大深受爵士樂吸引，每天都獨自在河邊吹奏次中音薩克斯風。畢業後他來到東京，與高中同學玉田俊二、同齡鋼琴家澤邊雪祈組成3人樂團「JASS」。連樂譜都看不懂，只是一心吹奏薩克斯風的大、從小就將一切獻給爵士樂的雪祈以及初學者玉田"
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/30/29/9d/30299d56-695c-9e34-57ca-a05f6310b789/fire_on_the_mystic_island_poster_p3.lsr/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E7%8A%AC%E5%A4%9C%E5%8F%89%E5%8A%87%E5%A0%B4%E7%89%88-%E7%B4%85%E8%93%AE%E7%9A%84%E8%93%AC%E8%90%8A%E5%B3%B6/id1741858805?uo=2",
+   "summary": "50年前，犬夜叉與桔梗曾到過這座傳說之島。犬夜叉是否能斬斷這道永無止盡之戰鬥的束縛，對一切做出最後的了斷！"
   }
  ]
 }

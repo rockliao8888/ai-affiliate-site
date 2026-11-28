@@ -330,7 +330,7 @@ def top10_sets(d):
          lambda x: "%s · %s" % (x.get("artist") or "", _views(x.get("views")))),
         ("ytm", "YouTube 熱門音樂", "🎵", "YouTube 台灣熱門音樂影片", yt.get("music", []),
          lambda x: "%s · %s" % (x.get("artist") or "", _views(x.get("views")))),
-        ("anime", "本季熱門動漫", "🍿", "本季播出中的動畫，依 MyAnimeList 追蹤人數排序", an.get("items", []),
+        ("anime", "本季熱門動漫", "🍿", "本季播出中的動畫，依 %s 追蹤人數排序" % ("AniList" if an.get("source") == "AniList" else "MyAnimeList"), an.get("items", []),
          lambda x: " · ".join(t for t in (x.get("jp") or x.get("alt"), "%s 人追蹤" % "{:,}".format(x["members"]) if x.get("members") else "") if t)),
         ("drama", "Netflix 台灣熱門影集", "📺", "Netflix 官方每週 Top 10（%s 當週）" % dr.get("week", ""), dr.get("items", []),
          lambda x: " · ".join(t for t in (x.get("season"), "上榜第 %d 週" % x["weeks"] if x.get("weeks") else "") if t)),
@@ -354,7 +354,7 @@ def top10_page(ctx, d):
                     % (k, ic, e(t), e(desc), _top_list(items, sub))
                     for k, t, ic, desc, items, sub in sets)
     body = ('<h1>10 大熱門：影片、音樂、動漫、追劇</h1><p class="sub">每日自動更新｜點標題前往官方平台觀看</p>%s'
-            '<div class="grid">%s</div>%s<p class="note">排行資料來自 YouTube、MyAnimeList（Jikan API）與 Netflix Top 10 官方公開資料，'
+            '<div class="grid">%s</div>%s<p class="note">排行資料來自 YouTube、MyAnimeList（Jikan API）／AniList與 Netflix Top 10 官方公開資料，'
             '僅列標題並連結至原平台，著作權屬原權利人所有。</p>'
             % ("".join(note_stale(d, k) for k in ("youtube", "anime", "drama")),
                cards or '<p class="mini">排行資料準備中。</p>', ad_slot(ctx)))

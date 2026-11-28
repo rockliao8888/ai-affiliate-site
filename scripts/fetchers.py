@@ -1,7 +1,11 @@
 """各類公開資料抓取。每個 fetcher 失敗時回傳 None，由 build.py 改用上次快照。"""
 import csv
 import io
+import json
 import os
+import time
+import urllib.request
+from datetime import date
 import xml.etree.ElementTree as ET
 from urllib.parse import quote, urlencode
 
@@ -198,31 +202,53 @@ def fetch_youtube():
     return {"videos": videos, "music": music} if (videos or music) else None
 
 
-def fetch_anime():
-    """本季動畫，依 MyAnimeList 追蹤人數排序（Jikan API，免金鑰）。"""
+def _anime_jikan():
     seen, rows = set(), []
     for page in (1, 2):
-        try:
-            j = http_json("https://api.jikan.moe/v4/seasons/now?sfw=true&page=%d" % page)
-        except RuntimeError:
-            break
+        j = http_json("https://api.jikan.moe/v4/seasons/now?sfw=true&page=%d" % page)
         for a in j.get("data", []):
-            if a.get("mal_id") in seen:
-                continue
-            seen.add(a.get("mal_id"))
-            rows.append(a)
+            if a.get("mal_id") not in seen:
+                seen.add(a.get("mal_id"))
+                rows.append(a)
         if not (j.get("pagination") or {}).get("has_next_page"):
             break
+        time.sleep(1.2)  # Jikan 限制每秒 3 次
     rows.sort(key=lambda a: -(a.get("members") or 0))
-    out = []
-    for i, a in enumerate(rows[:10]):
-        jp = a.get("title_japanese") or ""
-        name = a.get("title") or jp
-        out.append({"rank": i + 1, "name": name, "alt": a.get("title_english") or "", "jp": jp,
-                    "members": a.get("members") or 0, "score": a.get("score"), "episodes": a.get("episodes"),
-                    "img": ((a.get("images") or {}).get("jpg") or {}).get("image_url", ""),
-                    "url": a.get("url") or ""})
-    return {"items": out} if out else None
+    return [{"rank": i + 1, "name": a.get("title") or a.get("title_japanese"), "alt": a.get("title_english") or "",
+             "jp": a.get("title_japanese") or "", "members": a.get("members") or 0, "score": a.get("score"),
+             "episodes": a.get("episodes"), "img": ((a.get("images") or {}).get("jpg") or {}).get("image_url", ""),
+             "url": a.get("url") or ""} for i, a in enumerate(rows[:10])]
+
+
+ANILIST_Q = """query($s: MediaSeason, $y: Int) { Page(perPage: 10) { media(season: $s, seasonYear: $y, type: ANIME,
+ sort: POPULARITY_DESC, isAdult: false) { title { romaji english native } coverImage { medium } siteUrl popularity } } }"""
+
+
+def _anime_anilist():
+    t = date.today()
+    season = ("WINTER", "WINTER", "WINTER", "SPRING", "SPRING", "SPRING",
+              "SUMMER", "SUMMER", "SUMMER", "FALL", "FALL", "FALL")[t.month - 1]
+    body = json.dumps({"query": ANILIST_Q, "variables": {"s": season, "y": t.year}}).encode()
+    req = urllib.request.Request("https://graphql.anilist.co", data=body, method="POST",
+                                 headers={"Content-Type": "application/json", "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=25) as r:
+        media = json.loads(r.read().decode())["data"]["Page"]["media"]
+    return [{"rank": i + 1, "name": m["title"].get("romaji") or m["title"].get("native"), "alt": m["title"].get("english") or "",
+             "jp": m["title"].get("native") or "", "members": m.get("popularity") or 0,
+             "img": (m.get("coverImage") or {}).get("medium", ""), "url": m.get("siteUrl") or ""} for i, m in enumerate(media)]
+
+
+def fetch_anime():
+    """本季動畫，依追蹤人數排序。先用 Jikan（MyAnimeList），失敗改用 AniList，皆免金鑰。"""
+    for name, fn in (("Jikan", _anime_jikan), ("AniList", _anime_anilist)):
+        try:
+            items = fn()
+        except Exception as ex:  # noqa: BLE001
+            print("[fetch] anime via %s failed: %s" % (name, ex))
+            continue
+        if items:
+            return {"items": items, "source": name}
+    return None
 
 
 def fetch_drama():

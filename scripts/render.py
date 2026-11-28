@@ -18,6 +18,8 @@ header{background:var(--card);border-bottom:1px solid var(--line);position:stick
 .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
 .top{display:flex;align-items:center;gap:16px;padding:10px 0;flex-wrap:wrap}
 .logo{font-weight:800;font-size:20px;color:var(--ink)}.logo span{color:var(--brand)}
+
+.hs{margin-left:auto;font-size:14px;color:var(--mute);padding:4px 12px;border:1px solid var(--line);border-radius:999px}.hs:hover{text-decoration:none;color:var(--brand)}
 nav{display:flex;gap:4px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
 nav a{white-space:nowrap;padding:4px 10px;border-radius:999px;color:var(--mute);font-size:14px}
 nav a.on,nav a:hover{background:var(--brand2);color:var(--brand);text-decoration:none}
@@ -122,7 +124,7 @@ def page(ctx, path, title, body, desc="", side=""):
 <link rel="alternate" type="application/rss+xml" title="RSS" href="%(pre)srss.xml">
 <link rel="stylesheet" href="%(pre)sassets/style.css">%(he)s</head><body>
 <header><div class="wrap"><div class="top"><a class="logo" href="%(pre)sindex.html">📊 <span>%(name)s</span></a>
-<span class="mini">%(tag)s</span></div><nav>%(nav)s</nav></div></header>
+<span class="mini">%(tag)s</span><a class="hs" href="%(pre)ssearch.html" aria-label="搜尋">🔍 搜尋</a></div><nav>%(nav)s</nav></div></header>
 <main class="wrap">%(content)s</main>
 <footer><div class="wrap">
 <p><b>聯盟行銷揭露：</b>本站部分連結為聯盟行銷連結，您透過連結購買或申辦時，本站可能獲得佣金，不影響您的價格。</p>
@@ -291,9 +293,6 @@ def article_page(ctx, p):
 
 HOME_CSS = """
 .portal{max-width:1480px}
-.search{display:flex;max-width:760px;margin:6px auto 18px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 18px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-.search input{flex:1;border:0;background:transparent;color:var(--ink);font-size:16px;outline:none;min-width:0}
-.search button{border:0;background:var(--brand);color:#fff;border-radius:999px;padding:8px 18px;font-weight:700;cursor:pointer}
 .shortcuts{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:6px;max-width:1000px;margin:0 auto 22px}
 .sc{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;border-radius:12px;color:var(--ink);font-size:13px;text-align:center}
 .sc:hover{background:var(--card);text-decoration:none}
@@ -455,11 +454,10 @@ def home_page(ctx, d, brief, posts):
     tabs = [("index.html", "探索"), ("stocks.html", "財經"), ("etf.html", "ETF"), ("music.html", "音樂"), ("movies.html", "影音"),
             ("books.html", "閱讀"), ("news.html", "新聞"), ("health.html", "健康"), ("blog/index.html", "專欄")]
     body = ('<style>%s</style><div class="portal">'
-            '<form class="search" action="https://www.google.com/search" target="_blank" role="search">'
-            '<input name="q" placeholder="搜尋網路…" aria-label="搜尋"><button>搜尋</button></form>%s'
+            '%s%s'
             '<div class="panel"><div class="ptabs">%s</div><div class="pgrid">%s</div></div>%s</div><script>%s</script>'
-            % (HOME_CSS, _shortcuts(ctx), "".join('<a href="%s"%s>%s</a>' % (h, ' class="on"' if h == "index.html" else "", x) for h, x in tabs),
-               "".join(tiles), ad_slot(ctx), WX_JS))
+            % (HOME_CSS + SEARCH_CSS, search_bar(), _shortcuts(ctx), "".join('<a href="%s"%s>%s</a>' % (h, ' class="on"' if h == "index.html" else "", x) for h, x in tabs),
+               "".join(tiles), ad_slot(ctx), WX_JS + SEARCH_BAR_JS))
     return page(ctx, "index.html", ctx.site["name"], body, ctx.site["tagline"]).replace('<main class="wrap">', '<main class="wrap portal">', 1)
 
 
@@ -471,3 +469,184 @@ def about_page(ctx):
 <h2>AI 內容說明</h2><p>專欄由 AI 輔助產生，可能有疏漏；若發現錯誤歡迎來信更正。</p>
 <h2>著作權</h2><p>排行榜與新聞僅列標題並連結至原始來源，著作權屬原權利人所有。</p></article></div>""" % e(ctx.site["name"])
     return page(ctx, "about.html", "關於與揭露", body)
+
+
+# ------------------------------------------------------------- 搜尋 ----
+SEARCH_CSS = """
+.sbox [hidden]{display:none!important}
+.sbox{position:relative;max-width:760px;margin:6px auto 18px}
+.sbox .search{display:flex;align-items:center;gap:2px;margin:0;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 6px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.sbox .search input{flex:1;border:0;background:transparent;color:var(--ink);font-size:16px;outline:none;min-width:0;padding:6px 4px}
+.sbox .ib{border:0;background:transparent;color:var(--ink);width:40px;height:40px;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none}
+.sbox .ib:hover,.sbox .ib.on{background:var(--brand2);color:var(--brand)}.sbox .ib svg{width:22px;height:22px}
+.sbox .mic.rec{background:#d92d20;color:#fff;animation:pulse 1.2s infinite}@keyframes pulse{50%{opacity:.6}}
+.sbox .go{border:0;background:var(--brand);color:#fff;border-radius:999px;padding:8px 18px;font-weight:700;cursor:pointer;flex:none}
+@media (prefers-color-scheme:dark){.sbox .go{color:#062b27}}
+.smenu{position:absolute;left:0;top:54px;z-index:20;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px;min-width:220px;box-shadow:0 8px 28px rgba(0,0,0,.18)}
+.smenu label{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;cursor:pointer;font-size:15px}
+.smenu label:hover{background:var(--brand2)}.smenu svg{width:20px;height:20px;flex:none}.smenu small{display:block;color:var(--mute);font-size:12px}
+.vh{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none}
+.lprev{display:flex;align-items:center;gap:10px;margin-top:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 10px;flex-wrap:wrap}
+.lprev img{width:52px;height:52px;object-fit:cover;border-radius:8px}.lprev span{flex:1;min-width:120px;font-size:13px;color:var(--mute)}
+.lprev .btn{border:0;cursor:pointer}
+.lprev .x{border:0;background:transparent;color:var(--mute);cursor:pointer;font-size:14px}
+.smsg{font-size:13px;color:var(--mute);text-align:center;margin-top:6px;min-height:1em}
+.sres h2{font-size:16px;color:var(--mute);margin:22px 0 8px}.sres .card{margin-bottom:8px;padding:12px 14px}
+.sres .card a{font-weight:600}.sres mark{background:var(--brand2);color:inherit;border-radius:3px}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:8px;margin:16px auto;max-width:360px}
+"""
+
+_IC = {
+    "plus": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
+    "mic": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>',
+    "img": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>',
+    "cam": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>',
+    "file": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5 12.5 20a5 5 0 0 1-7-7L14 4.5a3.3 3.3 0 0 1 4.7 4.7L10.2 17.7a1.7 1.7 0 0 1-2.4-2.4L15.5 7.6"/></svg>',
+}
+
+
+def search_bar(pre="", q=""):
+    """含 ＋選單（相片庫／攝影機／檔案）與語音輸入的搜尋框。照片送到 Google 智慧鏡頭。"""
+    return ('<div class="sbox">'
+            '<form class="search" action="%(pre)ssearch.html" role="search">'
+            '<button type="button" class="ib plus" aria-label="更多輸入方式" aria-expanded="false">%(plus)s</button>'
+            '<input name="q" value="%(q)s" placeholder="搜尋本站文章、榜單、新聞…" aria-label="搜尋" autocomplete="off" enterkeyhint="search">'
+            '<button type="button" class="ib mic" aria-label="語音搜尋" hidden>%(mic)s</button>'
+            '<button class="go">搜尋</button></form>'
+            '<div class="smenu" hidden>'
+            '<label for="sf-lib">%(img)s<div>相片庫<small>用 Google 智慧鏡頭搜圖</small></div></label>'
+            '<label for="sf-cam">%(cam)s<div>攝影機<small>拍照後用智慧鏡頭搜尋</small></div></label>'
+            '<label for="sf-file">%(file)s<div>檔案<small>圖片或文字檔（.txt .md .csv）</small></div></label></div>'
+            '<form class="lensf" method="post" enctype="multipart/form-data" action="https://lens.google.com/v3/upload" target="_blank">'
+            '<input class="vh" type="file" id="sf-lib" accept="image/*" tabindex="-1">'
+            '<input class="vh" type="file" id="sf-cam" accept="image/*" capture="environment" tabindex="-1">'
+            '<input class="vh" type="file" id="sf-file" accept="image/*,.txt,.md,.csv,.json,text/plain" tabindex="-1">'
+            '<div class="lprev" hidden><img alt=""><span>已選擇圖片，按右邊按鈕在新分頁用 Google 智慧鏡頭辨識</span>'
+            '<button class="btn" type="submit">用 Google 智慧鏡頭搜尋</button><button class="x" type="button">取消</button></div></form>'
+            '<div class="smsg" aria-live="polite"></div></div>'
+            % {"pre": pre, "q": e(q), "plus": _IC["plus"], "mic": _IC["mic"], "img": _IC["img"], "cam": _IC["cam"], "file": _IC["file"]})
+
+
+SEARCH_BAR_JS = r"""
+(function(){var box=document.querySelector(".sbox");if(!box)return;
+var f=box.querySelector("form.search"),q=f.q,plus=box.querySelector(".plus"),menu=box.querySelector(".smenu"),msg=box.querySelector(".smsg");
+var lf=box.querySelector(".lensf"),prev=box.querySelector(".lprev"),ins=lf.querySelectorAll("input[type=file]");
+function say(t){msg.textContent=t||""}
+function setMenu(o){menu.hidden=!o;plus.classList.toggle("on",o);plus.setAttribute("aria-expanded",o)}
+plus.onclick=function(ev){ev.stopPropagation();setMenu(menu.hidden)};
+document.addEventListener("click",function(ev){if(!box.contains(ev.target))setMenu(false)});
+menu.querySelectorAll("label").forEach(function(l){l.addEventListener("click",function(){setTimeout(function(){setMenu(false)},0)})});
+function reset(){ins.forEach(function(i){i.value="";i.removeAttribute("name")});prev.hidden=true;var im=prev.querySelector("img");if(im.src)URL.revokeObjectURL(im.src);im.removeAttribute("src")}
+prev.querySelector(".x").onclick=function(){reset();say("")};
+lf.addEventListener("submit",function(){say("已在新分頁開啟 Google 智慧鏡頭");setTimeout(reset,1500)});
+ins.forEach(function(inp){inp.addEventListener("change",function(){var fl=inp.files&&inp.files[0];if(!fl)return;
+ ins.forEach(function(o){if(o!==inp){o.value="";o.removeAttribute("name")}});
+ if(/^image\//.test(fl.type)){inp.name="encoded_image";prev.querySelector("img").src=URL.createObjectURL(fl);prev.hidden=false;say("");return}
+ if(fl.size>2e6){say("檔案太大，請選 2MB 以內的文字檔");inp.value="";return}
+ var r=new FileReader();r.onload=function(){var t=(String(r.result).split(/\r?\n/).map(function(x){return x.replace(/[\t,;|]+/g," ").replace(/\s+/g," ").trim()}).filter(Boolean)[0]||"").slice(0,60);
+  inp.value="";if(!t){say("檔案裡沒有可搜尋的文字");return}q.value=t;f.submit()};
+ r.onerror=function(){say("無法讀取這個檔案")};r.readAsText(fl)})});
+var SR=window.SpeechRecognition||window.webkitSpeechRecognition,mic=box.querySelector(".mic");
+if(SR){mic.hidden=false;var rec=null;
+ mic.onclick=function(){if(rec){rec.stop();return}
+  rec=new SR();rec.lang="zh-TW";rec.interimResults=true;rec.maxAlternatives=1;var fin="";
+  rec.onstart=function(){mic.classList.add("rec");say("請說話…")};
+  rec.onresult=function(ev){var t="";for(var i=0;i<ev.results.length;i++){t+=ev.results[i][0].transcript;if(ev.results[i].isFinal)fin=t}q.value=t};
+  rec.onerror=function(ev){say(ev.error=="not-allowed"||ev.error=="service-not-allowed"?"請允許瀏覽器使用麥克風":(ev.error=="no-speech"?"沒有聽到聲音，請再試一次":"語音辨識失敗，請再試一次"))};
+  rec.onend=function(){mic.classList.remove("rec");rec=null;if((fin||q.value).trim()){say("");f.submit()}else if(msg.textContent=="請說話…")say("")};
+  try{rec.start()}catch(x){rec=null;say("語音辨識無法啟動")}}}
+f.addEventListener("submit",function(ev){if(!q.value.trim()){ev.preventDefault();q.focus()}});
+})();
+"""
+
+SEARCH_PAGE_JS = r"""
+(function(){var P=new URLSearchParams(location.search),q=(P.get("q")||"").trim(),out=document.getElementById("sres"),hd=document.getElementById("shd");
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function norm(s){return String(s||"").toLowerCase().normalize("NFKC")}
+var g="https://www.google.com/search?q="+encodeURIComponent(q);
+function gBtn(big){return '<a class="btn gbtn" href="'+g+'" target="_blank" rel="noopener">'+(big?"改用 Google 搜尋「"+esc(q)+"」":"在 Google 搜尋更多")+" →</a>"}
+if(!q){hd.textContent="輸入關鍵字，搜尋本站的文章、排行榜與新聞";return}
+document.title="搜尋：「"+q+"」｜"+document.title.split("｜").pop();
+hd.textContent="正在搜尋「"+q+"」…";
+fetch("search.json").then(function(r){return r.json()}).then(function(idx){
+ var terms=norm(q).split(/\s+/).filter(Boolean),hit=[];
+ idx.forEach(function(x){var t=norm(x.t),s=norm(x.s)+" "+norm(x.c),sc=0;
+  for(var i=0;i<terms.length;i++){var w=terms[i];if(t.indexOf(w)>=0)sc+=t.indexOf(w)==0?4:3;else if(s.indexOf(w)>=0)sc+=1;else return}
+  hit.push([sc+(x.w||0),x])});
+ hit.sort(function(a,b){return b[0]-a[0]});
+ if(!hit.length){hd.innerHTML="本站找不到「"+esc(q)+"」的相關內容";out.innerHTML=gBtn(true);return}
+ hd.textContent="本站找到 "+hit.length+" 筆「"+q+"」的結果";
+ var re=new RegExp("("+terms.map(function(w){return w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")+")","gi");
+ function hl(s){return esc(s).replace(re,"<mark>$1</mark>")}
+ var groups={},order=[];hit.slice(0,120).forEach(function(h){var c=h[1].c;if(!groups[c]){groups[c]=[];order.push(c)}groups[c].push(h[1])});
+ var html=gBtn(true);
+ order.forEach(function(c){html+="<h2>"+esc(c)+"（"+groups[c].length+"）</h2>";groups[c].forEach(function(x){
+  var ext=/^https?:/.test(x.u),rel=ext?' target="_blank" rel="'+(x.sp?"sponsored nofollow ":"")+'noopener"':"";
+  html+='<div class="card">'+(x.sp?'<span class="tag">贊助推薦</span> ':"")+'<a href="'+esc(x.u)+'"'+rel+">"+hl(x.t)+"</a>"+(x.s?'<div class="mini">'+hl(x.s)+"</div>":"")+"</div>"})});
+ out.innerHTML=html+gBtn(false)})
+.catch(function(){hd.textContent="搜尋資料載入失敗";out.innerHTML=gBtn(true)})})();
+"""
+
+
+def search_index(ctx, d, posts):
+    """產生站內搜尋用的索引（search.json）。t=標題 u=連結 c=分類 s=說明 w=權重 sp=贊助"""
+    idx = []
+
+    def add(t, u, c, s="", w=0, sp=False):
+        if t and u:
+            x = {"t": t, "u": u, "c": c}
+            if s:
+                x["s"] = s
+            if w:
+                x["w"] = w
+            if sp:
+                x["sp"] = 1
+            idx.append(x)
+
+    for h, t in NAV:
+        add(t, h, "本站頁面", w=2)
+    add("關於與揭露", "about.html", "本站頁面")
+    for p in posts:
+        add(p["title"], "blog/%s.html" % p["slug"], "專欄文章", "%s · %s · %s" % (p.get("label", ""), p["date"], p.get("excerpt", "")), w=3)
+    s = d.get("stocks") or {}
+    for x in s.get("picks", []):
+        add("%s %s" % (x["code"], x["name"]), "stocks.html", "潛力觀察股", "殖利率 %.1f%% · 本益比 %.1f · 淨值比 %.2f" % (x["yield"], x["pe"], x["pb"]), w=1)
+    t = d.get("etf") or {}
+    seen = set()
+    for key, lab in (("top_premium", "溢價"), ("top_discount", "折價"), ("inflow", "申購熱度")):
+        for x in t.get(key, []):
+            if x["code"] in seen:
+                continue
+            seen.add(x["code"])
+            sub = "折溢價 %+.2f%%" % x["premium"] if x.get("premium") is not None else lab
+            add("%s %s" % (x["code"], x.get("name") or ""), "etf.html", "ETF", sub, w=1)
+    for x in (d.get("fx") or {}).get("rates", []):
+        add("%s %s 匯率" % (x["name"], x["cur"]), "fx.html", "匯率", "1 %s ≈ %s 新台幣" % (x["cur"], x["twd_per"]))
+    m = d.get("music") or {}
+    for key, lab in (("zh", "華語榜"), ("en", "英文榜")):
+        for x in m.get(key, []):
+            add(x["name"], ctx.apple(x.get("url")), "音樂", "%s第 %d 名 · %s" % (lab, x["rank"], x.get("artist") or ""))
+    for x in (d.get("books") or {}).get("items", []):
+        add(x["name"], ctx.book(x["name"]) or ctx.apple(x.get("url")), "暢銷書", "第 %d 名 · %s" % (x["rank"], x.get("artist") or ""))
+    for x in (d.get("movies") or {}).get("items", []):
+        add(x["name"], ctx.apple(x.get("url")), "電影", "第 %d 名 · %s" % (x["rank"], x.get("genre") or ""))
+    a = d.get("apps") or {}
+    for x in a.get("apps", []):
+        add(x["name"], ctx.apple(x.get("url")), "App", "免費榜第 %d 名 · %s" % (x["rank"], x.get("genre") or ""))
+    for x in a.get("podcasts", []):
+        add(x["name"], ctx.apple(x.get("url")), "Podcast", "第 %d 名 · %s" % (x["rank"], x.get("artist") or ""))
+    for sec, items in (d.get("news") or {}).items():
+        for x in items:
+            title = re.sub(r"\s*｜.*$", "", x["title"].rsplit(" - ", 1)[0])
+            add(title, x["url"], "新聞", "%s · %s" % (sec, x.get("source") or ""))
+    for p in ctx.products:
+        add(p["name"], p["url"], "推薦商品", p.get("desc", ""), sp=True)
+    return idx
+
+
+def search_page(ctx):
+    body = ('<style>%s</style><h1>搜尋</h1>%s<p class="sub" id="shd"></p><div class="sres" id="sres"></div>'
+            '<noscript><p class="note">搜尋功能需要開啟 JavaScript。</p></noscript><script>%s%s</script>'
+            % (SEARCH_CSS, search_bar(), SEARCH_BAR_JS, SEARCH_PAGE_JS))
+    html = page(ctx, "search.html", "搜尋", body, "搜尋本站文章、排行榜與新聞")
+    return html.replace("<head><meta charset=\"utf-8\">", "<head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,follow\">", 1)

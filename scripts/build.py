@@ -7,6 +7,7 @@
 """
 import argparse
 import glob
+import json
 import os
 import re
 import sys
@@ -160,12 +161,15 @@ def main():
         "health.html": R.health_page(ctx, posts),
         "blog/index.html": R.blog_index(ctx, posts),
         "about.html": R.about_page(ctx),
+        "search.html": R.search_page(ctx),
     }
     for p in posts:
         pages["blog/%s.html" % p["slug"]] = R.article_page(ctx, p)
     for path, html in pages.items():
         write_text(os.path.join(PUBLIC_DIR, path), html)
     write_text(os.path.join(PUBLIC_DIR, "assets", "style.css"), R.CSS)
+    write_text(os.path.join(PUBLIC_DIR, "search.json"),
+               json.dumps(R.search_index(ctx, d, posts), ensure_ascii=False, separators=(",", ":")))
     write_text(os.path.join(PUBLIC_DIR, ".nojekyll"), "")
     if site.get("custom_domain"):  # GitHub Pages 自訂網域
         write_text(os.path.join(PUBLIC_DIR, "CNAME"), site["custom_domain"] + "\n")

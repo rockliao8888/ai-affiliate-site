@@ -90,14 +90,6 @@
   },
   {
    "rank": 12,
-   "name": "蜘蛛人：無家日",
-   "genre": "動作與歷險",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/b0/66/f6/b066f6d1-a36d-2e60-555b-f4bcb5b8cb94/DP_10275982_SpiderManNoWayHome_2000x3000_TW.jpg/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E7%84%A1%E5%AE%B6%E6%97%A5/id1598961641?uo=2",
-   "summary": "彼得帕克的蜘蛛人身分曝光，甚至被控殺害了神秘法師，讓他個人生活被超級英雄的身分大受影響，再也無法回到原本平凡的生活。他向奇異博士史傳奇尋求幫助，讓他重新回到沒有人知道他是蜘蛛人的時刻，竟意外的打開了多元宇宙，讓狀況變的更加危險，逼得彼得帕克"
-  },
-  {
-   "rank": 13,
    "name": "再見機器人",
    "genre": "劇情片",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/56/58/ea/5658eae0-3c1f-c2bb-de5d-cc9cb9cceff0/robot_dreams_poster_p3.lsr/115x170bb.png",
@@ -105,20 +97,28 @@
    "summary": "一隻住在曼哈頓的狗狗厭倦了孤獨，他決定購入高科技機器人作伴，兩人在《動物方城市》般的紐約街頭共舞同歡，友誼日漸深厚、密不可分。某日，他們在海灘上慵懶午睡，機器人醒來後卻再也無法動彈，狗狗只能帶著沈痛的心情，在夏夜中被迫離開。在無盡的等待中，"
   },
   {
-   "rank": 14,
-   "name": "蜘蛛人: 重生日",
+   "rank": 13,
+   "name": "蜘蛛人：無家日",
    "genre": "動作與歷險",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/fe/ea/b4/feeab4c3-2d6e-4a28-2b3f-98c3da0dd980/DP_10561485_Spider-ManBrandNewDay_2000x3000_TW.png/115x170bb.png",
-   "url": "https://itunes.apple.com/tw/movie/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E9%87%8D%E7%94%9F%E6%97%A5/id6793590242?uo=2",
-   "summary": "彼得的身體出現強大的變化，或許是阻止神秘強大威脅襲擊城市的唯一希望。"
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/b0/66/f6/b066f6d1-a36d-2e60-555b-f4bcb5b8cb94/DP_10275982_SpiderManNoWayHome_2000x3000_TW.jpg/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E7%84%A1%E5%AE%B6%E6%97%A5/id1598961641?uo=2",
+   "summary": "彼得帕克的蜘蛛人身分曝光，甚至被控殺害了神秘法師，讓他個人生活被超級英雄的身分大受影響，再也無法回到原本平凡的生活。他向奇異博士史傳奇尋求幫助，讓他重新回到沒有人知道他是蜘蛛人的時刻，竟意外的打開了多元宇宙，讓狀況變的更加危險，逼得彼得帕克"
   },
   {
-   "rank": 15,
+   "rank": 14,
    "name": "珍奧斯汀誤了我一生",
    "genre": "喜劇",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/36/5d/ae/365dae96-68f6-ea4d-e99e-c2aaaa597325/SDitTW25017_PosterArt_tw.png/115x170bb.png",
    "url": "https://itunes.apple.com/tw/movie/%E7%8F%8D%E5%A5%A7%E6%96%AF%E6%B1%80%E8%AA%A4%E4%BA%86%E6%88%91%E4%B8%80%E7%94%9F/id1827920427?uo=2",
    "summary": "書店店員艾嘉特是珍·奧斯汀的頭號粉絲。生性浪漫，有著老靈魂的她，看不慣時下人們的速食戀愛模式，一心嚮往遇見屬於自己的達西先生，談一段珍·奧斯汀式的浪漫戀情。然而，隨著時間流逝，眼看日常生活乏善可陳，寫作工作遲遲沒有進展，與暗戀許久的書店同事"
+  },
+  {
+   "rank": 15,
+   "name": "蜘蛛人: 重生日",
+   "genre": "動作與歷險",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/fe/ea/b4/feeab4c3-2d6e-4a28-2b3f-98c3da0dd980/DP_10561485_Spider-ManBrandNewDay_2000x3000_TW.png/115x170bb.png",
+   "url": "https://itunes.apple.com/tw/movie/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E9%87%8D%E7%94%9F%E6%97%A5/id6793590242?uo=2",
+   "summary": "彼得的身體出現強大的變化，或許是阻止神秘強大威脅襲擊城市的唯一希望。"
   },
   {
    "rank": 16,

@@ -18,14 +18,6 @@
   },
   {
    "rank": 3,
-   "name": "X（前身為Twitter）",
-   "artist": "X Corp.",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/9c/3a/519c3a16-6bd6-0b3f-cdff-e9b68b47b297/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/x-%E5%89%8D%E8%BA%AB%E7%82%BAtwitter/id333903271",
-   "genre": ""
-  },
-  {
-   "rank": 4,
    "name": "YouPlay：廣告封鎖視頻瀏覽器",
    "artist": "Simon Zvara",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/cb/d8/88cbd831-1254-07c9-0e26-2321b1d1bbc9/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/200x200bb.png",
@@ -33,10 +25,18 @@
    "genre": ""
   },
   {
+   "rank": 4,
+   "name": "X（前身為Twitter）",
+   "artist": "X Corp.",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/9c/3a/519c3a16-6bd6-0b3f-cdff-e9b68b47b297/ProductionAppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/x-%E5%89%8D%E8%BA%AB%E7%82%BAtwitter/id333903271",
+   "genre": ""
+  },
+  {
    "rank": 5,
    "name": "萬象有序｜命例管理系統",
    "artist": "JIA SHENG LIAO",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e4/65/99/e4659920-31f6-1978-ec07-710d5086ce18/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.png",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/42/b9/44/42b944f6-14e7-59be-2eee-4a205a59e0b9/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.png",
    "url": "https://apps.apple.com/tw/app/%E8%90%AC%E8%B1%A1%E6%9C%89%E5%BA%8F-%E5%91%BD%E4%BE%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1/id6804373203",
    "genre": ""
   },
@@ -50,18 +50,18 @@
   },
   {
    "rank": 7,
-   "name": "Claude by Anthropic",
-   "artist": "Anthropic PBC",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/20/d6/dd20d632-fc93-aa7f-ebfb-3ef74468496b/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/claude-by-anthropic/id6473753684",
-   "genre": ""
-  },
-  {
-   "rank": 8,
    "name": "Google Gemini",
    "artist": "Google",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/42/70/0042705c-df7a-cff7-d36e-bc19b959ee3e/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-0-0-85-220.png/200x200bb.png",
    "url": "https://apps.apple.com/tw/app/google-gemini/id6477489729",
+   "genre": ""
+  },
+  {
+   "rank": 8,
+   "name": "Claude by Anthropic",
+   "artist": "Anthropic PBC",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/20/d6/dd20d632-fc93-aa7f-ebfb-3ef74468496b/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/claude-by-anthropic/id6473753684",
    "genre": ""
   },
   {
@@ -74,38 +74,30 @@
   },
   {
    "rank": 10,
-   "name": "嗒奇：機械鍵盤",
-   "artist": "Paulus (KR)",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/9d/62/139d621a-f4af-fedf-3370-8265380c3a97/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/%E5%97%92%E5%A5%87-%E6%A9%9F%E6%A2%B0%E9%8D%B5%E7%9B%A4/id6790016733",
+   "name": "Bump - 好友地圖",
+   "artist": "amo",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/10/ff/4410ff7f-26cf-9c62-22a1-80880ad0bd8b/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/bump-%E5%A5%BD%E5%8F%8B%E5%9C%B0%E5%9C%96/id6471519217",
    "genre": ""
   },
   {
    "rank": 11,
-   "name": "Bump - 好友地圖",
-   "artist": "amo",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/61/e3/99/61e399ec-b37a-9809-6145-22966a5d6c49/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/bump-%E5%A5%BD%E5%8F%8B%E5%9C%B0%E5%9C%96/id6471519217",
-   "genre": "社交"
+   "name": "嗒奇：機械鍵盤",
+   "artist": "Paulus (KR)",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/9d/62/139d621a-f4af-fedf-3370-8265380c3a97/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/%E5%97%92%E5%A5%87-%E6%A9%9F%E6%A2%B0%E9%8D%B5%E7%9B%A4/id6790016733",
+   "genre": "工具程式"
   },
   {
    "rank": 12,
-   "name": "MUJI passport 台灣",
-   "artist": "台灣無印良品股份有限公司",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/da/ee/04/daee0475-b345-9c13-5c5a-046323c29fcc/AppIcon-0-0-1x_U007emarketing-0-2-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/muji-passport-%E5%8F%B0%E7%81%A3/id6469475233",
-   "genre": "購物"
+   "name": "TABA - 韓國搭車",
+   "artist": "Globaleur",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e0/b4/21/e0b421a4-d2da-0446-0bba-a7da5872dcdf/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/taba-%E9%9F%93%E5%9C%8B%E6%90%AD%E8%BB%8A/id6466561408",
+   "genre": "旅遊"
   },
   {
    "rank": 13,
-   "name": "麥當勞APP",
-   "artist": "McDonald's Global Markets LLC",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fc/92/0b/fc920b44-c045-5927-5391-13d06fdfcf05/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/%E9%BA%A5%E7%95%B6%E5%8B%9Eapp/id1217507712",
-   "genre": "美食佳飲"
-  },
-  {
-   "rank": 14,
    "name": "foodomo生活好幫手",
    "artist": "Connection Labs Ltd.",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/38/97/8a/38978a26-a504-aeb1-368a-c14164b2ffb8/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200bb.png",
@@ -113,15 +105,7 @@
    "genre": "美食佳飲"
   },
   {
-   "rank": 15,
-   "name": "Google Authenticator",
-   "artist": "Google",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3a/b1/0e/3ab10ed1-7ba1-7aae-8224-28d8788b4716/app_icon-0-0-1x_U007epad-0-0-0-1-0-0-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/google-authenticator/id388497605",
-   "genre": "工具程式"
-  },
-  {
-   "rank": 16,
+   "rank": 14,
    "name": "ChatGPT",
    "artist": "OpenAI OpCo, LLC",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/d8/a7/04d8a7fa-77ca-bf40-12e4-5f32c94b8824/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/200x200bb.png",
@@ -129,15 +113,15 @@
    "genre": "生產力工具"
   },
   {
-   "rank": 17,
-   "name": "HealthGO 健康夠",
-   "artist": "Bureau Health Promotion, Depart of Health R.O.C.",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/23/f8/e123f8bd-75de-8734-039b-97bc180985d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/healthgo-%E5%81%A5%E5%BA%B7%E5%A4%A0/id6752989877",
-   "genre": "健康與健身"
+   "rank": 15,
+   "name": "麥當勞APP",
+   "artist": "McDonald's Global Markets LLC",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fc/92/0b/fc920b44-c045-5927-5391-13d06fdfcf05/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/%E9%BA%A5%E7%95%B6%E5%8B%9Eapp/id1217507712",
+   "genre": "美食佳飲"
   },
   {
-   "rank": 18,
+   "rank": 16,
    "name": "bilibili-追番追劇彈幕",
    "artist": "BILIBILI SINGAPORE PTE. LTD.",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/26/53/392653d5-976d-64bb-f671-bd2ee0e69206/appicon-inter-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/200x200bb.png",
@@ -145,20 +129,36 @@
    "genre": "娛樂"
   },
   {
+   "rank": 17,
+   "name": "MUJI passport 台灣",
+   "artist": "台灣無印良品股份有限公司",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/da/ee/04/daee0475-b345-9c13-5c5a-046323c29fcc/AppIcon-0-0-1x_U007emarketing-0-2-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/muji-passport-%E5%8F%B0%E7%81%A3/id6469475233",
+   "genre": "購物"
+  },
+  {
+   "rank": 18,
+   "name": "Google Authenticator",
+   "artist": "Google",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3a/b1/0e/3ab10ed1-7ba1-7aae-8224-28d8788b4716/app_icon-0-0-1x_U007epad-0-0-0-1-0-0-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/google-authenticator/id388497605",
+   "genre": "工具程式"
+  },
+  {
    "rank": 19,
+   "name": "HealthGO 健康夠",
+   "artist": "Bureau Health Promotion, Depart of Health R.O.C.",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/23/f8/e123f8bd-75de-8734-039b-97bc180985d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/healthgo-%E5%81%A5%E5%BA%B7%E5%A4%A0/id6752989877",
+   "genre": "健康與健身"
+  },
+  {
+   "rank": 20,
    "name": "Trip.com - 酒店機票高鐵預訂平台",
    "artist": "Trip.com Travel Singapore Pte. Ltd.",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/ca/33/57ca3376-a4dd-8044-71fd-54a5bc51c977/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/200x200bb.png",
    "url": "https://apps.apple.com/tw/app/trip-com-%E9%85%92%E5%BA%97%E6%A9%9F%E7%A5%A8%E9%AB%98%E9%90%B5%E9%A0%90%E8%A8%82%E5%B9%B3%E5%8F%B0/id681752345",
    "genre": "旅遊"
-  },
-  {
-   "rank": 20,
-   "name": "集保e手掌握(集保e存摺/手機存摺)",
-   "artist": "臺灣集中保管結算所",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c0/c3/dc/c0c3dccb-e169-cd23-6dec-752a05917420/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/%E9%9B%86%E4%BF%9De%E6%89%8B%E6%8E%8C%E6%8F%A1-%E9%9B%86%E4%BF%9De%E5%AD%98%E6%91%BA-%E6%89%8B%E6%A9%9F%E5%AD%98%E6%91%BA/id1191681741",
-   "genre": "財經"
   },
   {
    "rank": 21,
@@ -170,45 +170,45 @@
   },
   {
    "rank": 22,
-   "name": "發票怪獸",
-   "artist": "Spring Trees Technology CO., LTD.",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b5/8c/99/b58c9977-7d4b-9e8b-0665-bcf035c52032/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/%E7%99%BC%E7%A5%A8%E6%80%AA%E7%8D%B8/id1089127465",
+   "name": "集保e手掌握(集保e存摺/手機存摺)",
+   "artist": "臺灣集中保管結算所",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c0/c3/dc/c0c3dccb-e169-cd23-6dec-752a05917420/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/%E9%9B%86%E4%BF%9De%E6%89%8B%E6%8E%8C%E6%8F%A1-%E9%9B%86%E4%BF%9De%E5%AD%98%E6%91%BA-%E6%89%8B%E6%A9%9F%E5%AD%98%E6%91%BA/id1191681741",
    "genre": "財經"
   },
   {
    "rank": 23,
-   "name": "TABA - 韓國搭車",
-   "artist": "Globaleur",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e0/b4/21/e0b421a4-d2da-0446-0bba-a7da5872dcdf/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/taba-%E9%9F%93%E5%9C%8B%E6%90%AD%E8%BB%8A/id6466561408",
-   "genre": "旅遊"
+   "name": "多鄰國 - 極速學外語",
+   "artist": "Duolingo",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/b3/f2/deb3f2ac-20ea-3015-e957-79fef651a3c8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/%E5%A4%9A%E9%84%B0%E5%9C%8B-%E6%A5%B5%E9%80%9F%E5%AD%B8%E5%A4%96%E8%AA%9E/id570060128",
+   "genre": "教育"
   },
   {
    "rank": 24,
-   "name": "1.1.1.1: Faster Internet",
-   "artist": "Cloudflare",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/f9/f1/d6f9f1f7-0417-3ab7-095d-2988dcc9a11b/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/200x200bb.png",
-   "url": "https://apps.apple.com/tw/app/1-1-1-1-faster-internet/id1423538627",
-   "genre": "工具程式"
-  },
-  {
-   "rank": 25,
    "name": "萬家福 PROSPERiTY PLAZA",
    "artist": "Uni-Prosperity Lifestyle Corp.",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3f/5a/19/3f5a1926-0954-bc35-2138-805365359b5b/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.png",
    "url": "https://apps.apple.com/tw/app/%E8%90%AC%E5%AE%B6%E7%A6%8F-prosperity-plaza/id6761046326",
    "genre": "購物"
+  },
+  {
+   "rank": 25,
+   "name": "Google One",
+   "artist": "Google",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/63/df/0363dfe4-21f3-68cc-f10f-abc29df67195/logo_one_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-0-85-220.png/200x200bb.png",
+   "url": "https://apps.apple.com/tw/app/google-one/id1451784328",
+   "genre": "生產力工具"
   }
  ],
  "podcasts": [
   {
    "rank": 1,
-   "name": "兆華與股惑仔",
-   "artist": "李兆華",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/e6/bf/26/e6bf2637-71f1-afff-e109-c3673c3c6eca/mza_7783278422903404291.jpeg/200x200bb.png",
-   "url": "https://podcasts.apple.com/tw/podcast/%E5%85%86%E8%8F%AF%E8%88%87%E8%82%A1%E6%83%91%E4%BB%94/id1590806478",
-   "genre": "商業"
+   "name": "呱吉",
+   "artist": "呱吉",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts124/v4/31/db/e1/31dbe1a4-ee79-ed00-6278-5101cea7bc32/mza_8489649070749869619.jpeg/200x200bb.png",
+   "url": "https://podcasts.apple.com/tw/podcast/%E5%91%B1%E5%90%89/id1477164549",
+   "genre": "社會與文化"
   },
   {
    "rank": 2,
@@ -220,19 +220,19 @@
   },
   {
    "rank": 3,
+   "name": "兆華與股惑仔",
+   "artist": "李兆華",
+   "img": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/e6/bf/26/e6bf2637-71f1-afff-e109-c3673c3c6eca/mza_7783278422903404291.jpeg/200x200bb.png",
+   "url": "https://podcasts.apple.com/tw/podcast/%E5%85%86%E8%8F%AF%E8%88%87%E8%82%A1%E6%83%91%E4%BB%94/id1590806478",
+   "genre": "商業"
+  },
+  {
+   "rank": 4,
    "name": "Gooaye 股癌",
    "artist": "謝孟恭",
    "img": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/04/b5/eb/04b5ebdf-7072-21fc-5876-e5feb5ba3dac/mza_7653733142335128691.jpeg/200x200bb.png",
    "url": "https://podcasts.apple.com/tw/podcast/gooaye-%E8%82%A1%E7%99%8C/id1500839292",
    "genre": "商業"
-  },
-  {
-   "rank": 4,
-   "name": "呱吉",
-   "artist": "呱吉",
-   "img": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts124/v4/31/db/e1/31dbe1a4-ee79-ed00-6278-5101cea7bc32/mza_8489649070749869619.jpeg/200x200bb.png",
-   "url": "https://podcasts.apple.com/tw/podcast/%E5%91%B1%E5%90%89/id1477164549",
-   "genre": "社會與文化"
   },
   {
    "rank": 5,

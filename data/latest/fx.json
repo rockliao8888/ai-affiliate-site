@@ -1,10 +1,10 @@
 {
- "updated": "Fri, 27 Nov 2026 00:02:31 +0000",
+ "updated": "Sat, 28 Nov 2026 00:02:31 +0000",
  "rates": [
   {
    "cur": "USD",
    "name": "美元",
-   "twd_per": 32.948
+   "twd_per": 32.978
   },
   {
    "cur": "JPY",
@@ -14,32 +14,32 @@
   {
    "cur": "EUR",
    "name": "歐元",
-   "twd_per": 36.16
+   "twd_per": 36.106
   },
   {
    "cur": "CNY",
    "name": "人民幣",
-   "twd_per": 4.968
+   "twd_per": 4.943
   },
   {
    "cur": "HKD",
    "name": "港幣",
-   "twd_per": 4.205
+   "twd_per": 4.212
   },
   {
    "cur": "KRW",
    "name": "韓元",
-   "twd_per": 0.0245
+   "twd_per": 0.0247
   },
   {
    "cur": "GBP",
    "name": "英鎊",
-   "twd_per": 43.195
+   "twd_per": 43.234
   },
   {
    "cur": "AUD",
    "name": "澳幣",
-   "twd_per": 21.854
+   "twd_per": 21.919
   }
  ]
 }
